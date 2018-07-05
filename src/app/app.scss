@@ -14,3 +14,57 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+$searchbar-ios-background-color: rgba(0, 0, 0, 1);
+$searchbar-ios-toolbar-input-background: rgba(0, 0, 0, 0);
+$searchbar-ios-input-background-color: lightgrey;
+
+.menu-header{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    padding-top: 20px;
+    //border-bottom: 1px solid black;
+}
+
+.header-fixed{
+    position: fixed;
+    background-clip: padding-box;
+    /*backdrop-filter: blur(3px);*/
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 35px 35px #FFFF;
+    
+}
+
+.page-content{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.6rem;
+}
+
+.content-header{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 15px 0 15px 0;
+}
+
+.content-paragraph{
+    margin-bottom: 15px;
+}
+
+.content-quote{
+    font-style: italic;
+    margin-bottom: 20px;
+    color: rgb(83, 83, 83);
+}
+
+ul li{
+    margin: 3px 0 3px 0;
+}
+
+ul{
+    padding-left: 10px;
+}

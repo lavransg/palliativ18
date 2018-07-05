@@ -1,30 +1,43 @@
-<!--
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
--->
+<ion-content>
 
-<ion-content padding>
+  <header-bar [title]="title" [frontpage]=true></header-bar>
+  
+  <!--
+  <ion-grid class="button-container">
+    <ion-row>
+      <ion-col col-xl class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Innhold / bakgrunn</ion-col>
+      <ion-col col-xl class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Symptomer</ion-col>
+      <ion-col col-xl class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Akutte tilstander</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Kommunikasjon</ion-col>
+      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Åndelig omsorg</ion-col>
+      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Den siste tiden</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Kartlegging</ion-col>
+      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Prosedyrer</ion-col>
+      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>test</ion-col>
+    </ion-row>
+  </ion-grid>
+-->
   <ion-grid>
     <ion-row>
-      <ion-col-md>test</ion-col-md>
-      <ion-col-md>test</ion-col-md>
-      <ion-col-md>test</ion-col-md>
+      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Innhold / bakgrunn</div>
+      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#" (click)="symptomerButtonClicked()"><br>Symptomer</div>
+      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Akutte tilstander</div>
     </ion-row>
     <ion-row>
-      <ion-col-md>test</ion-col-md>
-      <ion-col-md>test</ion-col-md>
-      <ion-col-md>test</ion-col-md>
+      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Kommunikasjon</div>
+      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Åndelig omsorg</div>
+      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Den siste tiden</div>
     </ion-row>
     <ion-row>
-      <ion-col-md>test</ion-col-md>
-      <ion-col-md>test</ion-col-md>
-      <ion-col-md>test</ion-col-md>
+      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Kartlegging</div>
+      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Prosedyrer</div>
+      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Test</div>
     </ion-row>
+      
   </ion-grid>
 
 </ion-content>
