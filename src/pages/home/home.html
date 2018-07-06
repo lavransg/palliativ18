@@ -21,21 +21,42 @@
     </ion-row>
   </ion-grid>
 -->
-  <ion-grid>
+  <ion-grid class="buttons-container">
+    
     <ion-row>
-      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Innhold / bakgrunn</div>
-      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#" (click)="symptomerButtonClicked()"><br>Symptomer</div>
-      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Akutte tilstander</div>
+      <div class="button-container">
+        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(1)"><br>Innhold / bakgrunn
+      </div>
+      <div class="button-container">
+        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(2)"><br>Symptomer
+      </div>
+      <div class="button-container">
+        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(3)"><br>Akutte tilstander
+      </div>
     </ion-row>
+
     <ion-row>
-      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Kommunikasjon</div>
-      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Åndelig omsorg</div>
-      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Den siste tiden</div>
+      <div class="button-container">
+        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(4)"><br>Kommunikasjon
+        </div>
+      <div class="button-container">
+        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(5)"><br>Åndelig omsorg
+      </div>
+      <div class="button-container">
+        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(6)"><br>Den siste tiden
+      </div>
     </ion-row>
+
     <ion-row>
-      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Kartlegging</div>
-      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Prosedyrer</div>
-      <div class="button-container"><img src="http://via.placeholder.com/100x100" alt="#"><br>Test</div>
+      <div class="button-container">
+        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(7)"><br>Prosedyrer
+      </div>
+      <div class="button-container">
+        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(8)"><br>Kartlegging
+      </div>
+      <div class="button-container">
+        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(9)"><br>Test
+      </div>
     </ion-row>
       
   </ion-grid>

@@ -7,7 +7,7 @@ import { NavController } from 'ionic-angular';
 })
 export class Symptomer1Page {
 
-  title: string = "Smerte"
+   title: string = "Smerte"
 
   constructor(public navCtrl: NavController) {
 

@@ -21,25 +21,33 @@ $searchbar-ios-input-background-color: lightgrey;
 
 .menu-header{
     width: 100%;
-    height: 60px;
-    margin-bottom: 40px;
-    font-size: 3rem;
-    text-align: center;
-    font-family: 'Varela Round', sans-serif;
-    padding-top: 20px;
-    //border-bottom: 1px solid black;
+    height: 100px;
 }
 
 .header-fixed{
     position: fixed;
-    background-clip: padding-box;
-    /*backdrop-filter: blur(3px);*/
+    width: 100%;
+    height: 140px;
+    padding-top: 20px;
+    padding-bottom: 65px;
+    background-clip: content-box;
+    overflow-x: hidden;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 35px 35px #FFFF;
-    
+
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.header-shadow{
+    box-shadow: 0 0 35px 35px white;
+    -webkit-box-shadow: 0 0 35px 35px white;
+    -moz-box-shadow: 0 0 35px 35px white;
 }
 
 .page-content{
+    max-width: 700px;
+    padding-top: 10px;
     padding-left: 10%;
     padding-right: 10%;
     font-size: 1.6rem;

@@ -9,7 +9,7 @@ import { HomePage } from '../home/home';
 })
 export class InformationPage {
   
-  title: string = "Informasjon"
+   title: string = "Informasjon"
 
   constructor(public navCtrl: NavController) {
 
