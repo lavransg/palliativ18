@@ -88,8 +88,8 @@ $searchbar-ios-input-background-color: lightgrey;
     z-index: 1;
     background-color: white;
     box-shadow: 0 -5px 35px 35px white;
-    -webkit-box-shadow: 0 0 35px 35px white;
-    -moz-box-shadow: 0 0 35px 35px white;
+    -webkit-box-shadow: 0 -5px 35px 35px white;
+    -moz-box-shadow: 0 -5px 35px 35px white;
 }
 
 .page-content{
@@ -127,5 +127,9 @@ ul{
 @media screen and (max-height : 600px) {
     .header-fixed{
         font-size: 2.5rem;
+    }
+
+    .header{
+        max-height: 100px;
     }
 }

@@ -1,4 +1,9 @@
 page-search{
+    
+    .list{
+        margin-top: 100px;
+    }
+
     .search-header{
         z-index: 10;
         background-clip: content-box;
@@ -18,6 +23,16 @@ page-search{
     .header-spacer{
         width: 100%;
         height: 100px;
+    }
+
+    .empty-search{
+        width: 100%;
+        position: absolute;
+        transform: translateY(30vh);
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(136, 136, 136);
     }
 
 }

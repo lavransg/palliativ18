@@ -12,6 +12,7 @@ export class SearchPage {
 
   searchbarInput: string;
   results: any[];
+  showEmptyResults: boolean = false;
 
   constructor(public navCtrl: NavController, public searchData: SearchData) {
 
@@ -23,6 +24,8 @@ export class SearchPage {
     }
     else{
       this.results = this.searchData.filterItems(this.searchbarInput);
+      if (this.results.length == 0){ this.showEmptyResults = true }
+      else { this.showEmptyResults = false }
     }
     
   }
