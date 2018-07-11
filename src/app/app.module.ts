@@ -56,7 +56,7 @@ import { Aandelig_omsorgPage } from '../pages/aandelig_omsorg/aandelig_omsorg';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {pageTransition: "md-transition"})
   ],
   bootstrap: [IonicApp],
   entryComponents: [

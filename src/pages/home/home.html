@@ -1,64 +1,58 @@
+
+
+
+<ion-header><header-bar [title]="title" [frontpage]=true></header-bar></ion-header>
 <ion-content>
 
-  <header-bar [title]="title" [frontpage]=true></header-bar>
-  
-  <!--
-  <ion-grid class="button-container">
-    <ion-row>
-      <ion-col col-xl class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Innhold / bakgrunn</ion-col>
-      <ion-col col-xl class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Symptomer</ion-col>
-      <ion-col col-xl class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Akutte tilstander</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Kommunikasjon</ion-col>
-      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Åndelig omsorg</ion-col>
-      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Den siste tiden</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Kartlegging</ion-col>
-      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>Prosedyrer</ion-col>
-      <ion-col col-md class="menu-button"><img src="http://via.placeholder.com/100x100" alt="#"><br>test</ion-col>
-    </ion-row>
-  </ion-grid>
--->
   <ion-grid class="buttons-container">
     
     <ion-row>
       <div class="button-container">
-        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(1)"><br>Innhold / bakgrunn
+        <img class="button-image" src="../../assets/imgs/Innhold.png" alt="#" (click)="menuButtonClicked(1)">
+        <br>Innhold / bakgrunn
       </div>
       <div class="button-container">
-        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(2)"><br>Symptomer
+        <img class="button-image" src="../../assets/imgs/symptomer.png" alt="#" (click)="menuButtonClicked(2)">
+        <br>Symptomer
       </div>
       <div class="button-container">
-        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(3)"><br>Akutte tilstander
+        <img class="button-image" src="../../assets/imgs/akutt.png" alt="#" (click)="menuButtonClicked(3)">
+        <br>Akutte tilstander
       </div>
     </ion-row>
 
     <ion-row>
       <div class="button-container">
-        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(4)"><br>Kommunikasjon
+        <img class="button-image" src="../../assets/imgs/kommunikasjon.png" alt="#" (click)="menuButtonClicked(4)">
+        <br>Kommunikasjon
         </div>
       <div class="button-container">
-        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(5)"><br>Åndelig omsorg
+        <img class="button-image" src="../../assets/imgs/andelig.png" alt="#" (click)="menuButtonClicked(5)">
+        <br>Åndelig omsorg
       </div>
       <div class="button-container">
-        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(6)"><br>Den siste tiden
+        <img class="button-image" src="../../assets/imgs/siste.png" alt="#" (click)="menuButtonClicked(6)">
+        <br>Den siste tiden
       </div>
     </ion-row>
 
     <ion-row>
       <div class="button-container">
-        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(7)"><br>Prosedyrer
+        <img class="button-image" src="../../assets/imgs/prosedyrer.png" alt="#" (click)="menuButtonClicked(7)">
+        <br>Prosedyrer
       </div>
       <div class="button-container">
-        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(8)"><br>Kartlegging
+        <img class="button-image" src="../../assets/imgs/kartlegging.png" alt="#" (click)="menuButtonClicked(8)">
+        <br>Kartlegging
       </div>
       <div class="button-container">
-        <img src="http://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(9)"><br>Test
+        <img class="button-image" src="https://via.placeholder.com/100x100" alt="#" (click)="menuButtonClicked(9)">
+        <br>Test
       </div>
     </ion-row>
       
   </ion-grid>
+
+  <!-- <button class="btn" ion-button full (click)="addToHome(event)" *ngIf="showBtn" >Install</button>-->
 
 </ion-content>

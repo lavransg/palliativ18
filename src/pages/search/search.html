@@ -1,37 +1,39 @@
+<div class="search-header">
+  
+  <ion-row>
+      <ion-col col-2>
+      <ion-icon name="arrow-back" (click)="exitButtonClicked()"></ion-icon>
+      </ion-col>
+      <ion-col col-8><b>Søk</b></ion-col>
+      <ion-col col-2></ion-col>
+  </ion-row>
+
+  <ion-searchbar
+    placeholder="søketekst"
+    [(ngModel)]="searchbarInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+</div>
+<div class="header-spacer"></div>
+
 <ion-content>
 
-    <div class="search-header">
-      
-      <ion-row>
-          <ion-col col-2>
-          <ion-icon name="arrow-back" (click)="exitButtonClicked()"></ion-icon>
-          </ion-col>
-          <ion-col col-8><b>Søk</b></ion-col>
-          <ion-col col-2></ion-col>
-      </ion-row>
+    
 
-      <ion-searchbar
-        placeholder="søketekst"
-        [(ngModel)]="searchbarInput"
-        [showCancelButton]="shouldShowCancel"
-        (ionInput)="onInput($event)"
-        (ionCancel)="onCancel($event)">
-      </ion-searchbar>
-
-      <ion-list>
-        <ion-item *ngFor="let result of results" (click)="goToPage(result.component)">
-          
-            <ion-row>
-              <ion-col col-11>{{result.title}}</ion-col >
-              <ion-col col-1>
-                <ion-icon name="arrow-forward"></ion-icon>
-              </ion-col>
-            </ion-row>
-          
-        </ion-item>
-      </ion-list>
-
-    </div>
+    <ion-list>
+      <ion-item text-wrap *ngFor="let result of results" (click)="goToPage(result.component)">
+        
+          <ion-row>
+            <ion-col col-11>{{result.title}}</ion-col >
+            <ion-col col-1>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </ion-col>
+          </ion-row>
+        
+      </ion-item>
+    </ion-list>
     
 
 </ion-content>

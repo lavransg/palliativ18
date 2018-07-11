@@ -52,31 +52,44 @@ export class HomePage {
     {title: 'Ernering og væsketilførsel',               component: Den_siste_tiden6Page},
   ]
 
+  showBtn: boolean = false;
+  deferredPrompt;
+
   constructor(public navCtrl: NavController) {
 
   }
 
+  /*
+  ionViewWillEnter(){
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later on the button event.
+      this.deferredPrompt = e;
+       
+      // Update UI by showing a button to notify the user they can add to home screen
+      this.showBtn = true;
+    });
+     
+    //button click event to show the promt
+    window.addEventListener('appinstalled', (event) => {
+     alert('installed');
+    });
+     
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      alert('display-mode is standalone');
+    }
+  }
+  */
+
   menuButtonClicked(button){
     let page;
-    console.log(button)
     switch(button){
-      case 1:
-        page = Innhold_bakgrunnPage
-        break;
       case 2:
         this.navCtrl.push(ListPage, {
           title: "Symptomer",
           pages: this.symptomer
         });
-        break;
-      case 3:
-        page = Akutte_tilstanderPage
-        break;
-      case 4:
-        page = KommunikasjonPage
-        break;
-      case 5:
-        page = Aandelig_omsorgPage
         break;
       case 6:
         this.navCtrl.push(ListPage, {
@@ -84,20 +97,43 @@ export class HomePage {
           pages: this.denSisteTiden
         });
         break;
-      case 7:
-        page = ProsedyrerPage
+      case 1: page = Innhold_bakgrunnPage
         break;
-      case 8:
-        page = KartleggingPage
+      case 3: page = Akutte_tilstanderPage
         break;
-      case 9:
-        // foreløpig tom
+      case 4: page = KommunikasjonPage
+        break;
+      case 5: page = Aandelig_omsorgPage
+        break; 
+      case 7: page = ProsedyrerPage
+        break;
+      case 8: page = KartleggingPage
+        break;
+      case 9: // foreløpig tom
         break;
     }
     if (page){
       this.navCtrl.push(page);
     }
   }
+
+  /*
+  addToHome(event){
+    //debugger
+    // hide our user interface that shows our button
+    // Show the prompt
+    this.deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    this.deferredPrompt.userChoice
+      .then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          alert('User accepted the prompt');
+        } else {
+          alert('User dismissed the prompt');
+        }
+        this.deferredPrompt = null;
+      });
+  }*/
 
 
 }

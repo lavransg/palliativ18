@@ -1,18 +1,9 @@
+
+<ion-header><header-bar [title]="title"></header-bar></ion-header>
 <ion-content>
 
-  <!--
-  <div class="menu-header">
-      <ion-row>
-        <ion-col col-2><ion-icon name="arrow-back" (click)="backButtonClicked()"></ion-icon></ion-col>
-        <ion-col col-8><b>{{title}}</b></ion-col>
-        <ion-col col-2><ion-icon name="search"></ion-icon></ion-col>
-      </ion-row>
-  </div>
--->
-  <header-bar [title]="title"></header-bar>
-
   <ion-list>
-    <ion-item *ngFor="let page of pages" (click)="goToPage(page.component)">
+    <ion-item text-wrap class="list-item" *ngFor="let page of pages" (click)="goToPage(page.component)">
       
         <ion-row>
           <ion-col col-11>{{page.title}}</ion-col >
@@ -23,6 +14,5 @@
       
     </ion-item>
   </ion-list>
-
 
 </ion-content>
