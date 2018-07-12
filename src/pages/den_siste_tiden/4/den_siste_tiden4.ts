@@ -7,7 +7,7 @@ import { NavController } from 'ionic-angular';
 })
 export class Den_siste_tiden4Page {
 
-   title: string = "Når døden intreffer"
+   title: string = "Når døden inntreffer"
 
   constructor(public navCtrl: NavController) {
 

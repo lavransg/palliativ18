@@ -32,7 +32,11 @@ import { Aandelig_omsorgPage } from '../aandelig_omsorg/aandelig_omsorg';
 })
 export class HomePage {
 
-   title: string = "Palliasjon"
+  title: string = "Palliasjon"
+  buttonColor: string = 'transparent';
+  showBtn: boolean = false;
+  deferredPrompt;
+
   symptomer: any[] = [
     {title: "Smerte",     component: Symptomer1Page},
     {title: "Kvalme",     component: Symptomer2Page},
@@ -51,9 +55,6 @@ export class HomePage {
     {title: 'Medikamentskrinet / lindring av symptomer',component: Den_siste_tiden5Page},
     {title: 'Ernering og væsketilførsel',               component: Den_siste_tiden6Page},
   ]
-
-  showBtn: boolean = false;
-  deferredPrompt;
 
   constructor(public navCtrl: NavController) {
 
@@ -83,6 +84,7 @@ export class HomePage {
   */
 
   menuButtonClicked(button){
+    this.buttonColor = '#345465';
     let page;
     switch(button){
       case 2:

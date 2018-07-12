@@ -24,7 +24,7 @@ export class SearchPage {
     }
     else{
       this.results = this.searchData.filterItems(this.searchbarInput);
-      if (this.results.length == 0){ this.showEmptyResults = true }
+      if ( this.results.length == 0 ){ this.showEmptyResults = true }
       else { this.showEmptyResults = false }
     }
     

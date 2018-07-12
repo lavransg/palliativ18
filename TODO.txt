@@ -1,0 +1,8 @@
+
+) button-press feedback
+
+) dypere søkefunksjon
+
+) pwa popup
+
+) bedre visning av tekst-innhold

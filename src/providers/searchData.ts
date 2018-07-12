@@ -32,66 +32,159 @@ export class SearchData {
     constructor() {
  
         this.items = [
-            {title: 'Akutte Tilstander', searchTitle: "Akutte tilstander", content: "", component: Akutte_tilstanderPage},
-            {title: 'Innhold bakgrunn',  searchTitle: "Innhold bakgrunn",  content: "", component: Innhold_bakgrunnPage},
-            {title: 'Kartlegging',       searchTitle: "Kartlegging",       content: "", component: KartleggingPage},
-            {title: 'Kommunikasjon',     searchTitle: "Kommunikasjon",     content: "", component: KommunikasjonPage},
-            {title: 'Prosedyrer',        searchTitle: "Prosedyrer",        content: "", component: ProsedyrerPage},
-            {title: 'Åndelig omsorg',    searchTitle: "Åndelig omsorg",    content: "", component: Aandelig_omsorgPage},
+            {
+                title: 'Akutte tilstander', 
+                searchTitle: 
+";Akutte tilstander;Truende tverrsnitt;Nye smerter (bryst, rygg, hode, abdomen);\
+Blære-/tarmdysfunksjon;Brått oppståtte endringer i funksjonsnivå (f.eks. tap av gangfunksjon, redusert kraft i ekstremiteter, tap av språk);\
+Økt trykk fra hjernemetastaser;Endret bevissthet/stemningsleie;Akutt svimmelhet;Kramper;\
+Synkope (kortvarig bevissthetstap med fullstendig oppvåkning);Hjertearytmier;Vektøkning/ødemer;Tungpustet;\
+Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;Blødninger;Tumorlysesyndrom;Hyperkalsemi;Delirium;", 
+                component: Akutte_tilstanderPage},
+            {title: 'Innhold / bakgrunn',searchTitle: ";Innhold / bakgrunn;Bakgrunn;Innledning;",component: Innhold_bakgrunnPage},
+            {title: 'Kartlegging',       searchTitle: ";Kartlegging;",       component: KartleggingPage},
+            {title: 'Kommunikasjon',     searchTitle: ";Kommunikasjon;",     component: KommunikasjonPage},
+            {title: 'Prosedyrer',        searchTitle: ";Prosedyrer;",        component: ProsedyrerPage},
+            {title: 'Åndelig omsorg',    searchTitle: ";Åndelig omsorg;",    component: Aandelig_omsorgPage},
 
             //Symptomer
-            {title: 'Smerte',       searchTitle: "Symptomer Smerte",        content: "", component: Symptomer1Page},
-            {title: 'Kvalme',       searchTitle: "Symptomer Kvalme",        content: "", component: Symptomer2Page},
-            {title: 'Angst/uro',    searchTitle: "Symptomer Angst/uro",     content: "", component: Symptomer3Page},
-            {title: 'Delir',        searchTitle: "Symptomer Delir",         content: "", component: Symptomer4Page},
-            {title: 'Munntørr',     searchTitle: "Symptomer Munntørr",      content: "", component: Symptomer5Page},
-            {title: 'Obstipasjon',  searchTitle: "Symptomer Obstipasjon",   content: "", component: Symptomer6Page},
-            {title: 'Matlyst',      searchTitle: "Symptomer Matlyst",       content: "", component: Symptomer7Page},
-            {title: 'Tungpust',     searchTitle: "Symptomer Tungpust",      content: "", component: Symptomer8Page},
-            //den siste tiden
             {
-                title: 'Tegn på at X er døende',       
-                searchTitle: "Den siste tiden ",        
-                content: "", 
+                title: 'Symptomer', 
+                subtitle: "Smerte",        
+                searchTitle: ";Symptomer;Smerte;Smerte: Tiltak;Smerte: Medikamenter og behandling;Smerte: Grunnleggende kartlegging;Skjema;",        
+                component: Symptomer1Page},
+            {
+                title: 'Symptomer', 
+                subtitle: "Kvalme",        
+                searchTitle: ";Symptomer;Kvalme;Kvalme: Tiltak;Kvalme: Medikamenter og behandling;Kvalme: Grunnleggende kartlegging;",        
+                component: Symptomer2Page},
+            {
+                title: 'Symptomer', 
+                subtitle: "Angst/uro",     
+                searchTitle: ";Symptomer;Angst/uro;Angst/uro: Tiltak;Angst/uro: Medikamenter og behandling;Angst/uro: Grunnleggende kartlegging;",     
+                component: Symptomer3Page},
+            {
+                title: 'Symptomer', 
+                subtitle: "Delir",         
+                searchTitle: ";Symptomer;Delir;Delir: Tiltak;Delir: Medikamenter og behandling;Delir: Grunnleggende kartlegging;",         
+                component: Symptomer4Page},
+            {
+                title: 'Symptomer', 
+                subtitle: "Munntørr",      
+                searchTitle: ";Symptomer;Munntørr;Munntørr: Tiltak;Munntørr: Medikamenter og behandling;Munntørr: Grunnleggende kartlegging;",      
+                component: Symptomer5Page},
+            {
+                title: 'Symptomer', 
+                subtitle: "Obstipasjon",   
+                searchTitle: ";Symptomer;Obstipasjon;Obstipasjon: Tiltak;Obstipasjon: Medikamenter og behandling;Obstipasjon: Grunnleggende kartlegging;",   
+                component: Symptomer6Page},
+            {
+                title: 'Symptomer', 
+                subtitle: "Matlyst",       
+                searchTitle: ";Symptomer;Matlyst;Matlyst: Tiltak;Matlyst: Medikamenter og behandling;Matlyst: Grunnleggende kartlegging;",       
+                component: Symptomer7Page},
+            {
+                title: 'Symptomer', 
+                subtitle: "Tungpust",      
+                searchTitle: ";Symptomer;Tungpust;Tungpust: Tiltak;Tungpust: Medikamenter og behandling;Tungpust: Grunnleggende kartlegging;",      
+                component: Symptomer8Page},
+            
+                //den siste tiden
+            {
+                title: 'Den siste tiden',
+                subtitle: "Tegn på at X er døende",      
+                searchTitle: ";Den siste tiden;Tegn på at X er døende;",        
                 component: Den_siste_tiden1Page
             },
             {
-                title: 'Det gode stellet',             
-                searchTitle: "Den siste tiden Det gode stellet ",        
-                content: "", 
+                title: 'Den siste tiden',
+                subtitle: "Det gode stellet",             
+                searchTitle: ";Den siste tiden;Det gode stellet;",        
                 component: Den_siste_tiden2Page},
             {
-                title: 'Ikke-medikamentell behandling',
-                searchTitle: "Den siste tiden Ikke-medikamentell behandling ",        
-                content: "", 
+                title: 'Den siste tiden',
+                subtitle: "Ikke-medikamentell behandling",
+                searchTitle: ";Den siste tiden;Ikke-medikamentell behandling;",        
                 component: Den_siste_tiden3Page
             },
             {
-                title: 'Når døden intreffer',          
-                searchTitle: "Den siste tiden Når døden intreffer",       
-                content: "", 
+                title: 'Den siste tiden',
+                subtitle: "Når døden inntreffer",          
+                searchTitle: ";Den siste tiden;Når døden inntreffer;",       
                 component: Den_siste_tiden4Page
             },
             {
-                title: 'Medikamentskrinet / lindring av symptomer',
-                searchTitle: "Den siste tiden Medikamentskrinet / lindring av symptomer",        
-                content: "", 
+                title: 'Den siste tiden',
+                subtitle: "Medikamentskrinet / lindring av symptomer",
+                searchTitle: ";Den siste tiden;Medikamentskrinet / lindring av symptomer;",        
                 component: Den_siste_tiden5Page
             },
             {
-                title: 'Ernering og væsketilførsel',   
-                searchTitle: "Den siste tiden Ernering og væsketilførsel",        
-                content: "", 
+                title: 'Den siste tiden',
+                subtitle: "Ernering og væsketilførsel",   
+                searchTitle: ";Den siste tiden;Ernering og væsketilførsel;",        
                 component: Den_siste_tiden6Page
             },
         ]
  
     }
- 
+    
     filterItems(searchTerm){
-        return this.items.filter((item) => {
-            return item.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
-        });    
+        let results = [];
+        results = this.items.filter((item) => {
+            let termIndex = item.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase())
+            if ( termIndex > -1){
+                let endIndex = item.searchTitle.indexOf(';', termIndex);
+                let startIndex = item.searchTitle.lastIndexOf(';',endIndex -1)
+                let preview = item.searchTitle.slice(startIndex + 1,endIndex)
+                
+                if (preview == item.title){
+                    
+                    if ( item.subtitle ){ item.preview = item.subtitle }
+                    else { item.preview = "" }
+                }
+                else { item.preview = preview }
+                return true
+            }
+            else { return false }
+        });
+        
+        //////////////////////// TEST
+        let results2 = []
+        for (let i = 0; i < this.items.length; i++){
+            let item = this.items[i]
+            let index = item.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase())
+            while ( index != -1){
+                let itemCopy = Object.assign({},this.items[i])
+                let endIndex = item.searchTitle.indexOf(';', index);
+                let startIndex = item.searchTitle.lastIndexOf(';',endIndex -1)
+                let preview = item.searchTitle.slice(startIndex + 1,endIndex)
+                if (preview == item.title){
+                    console.log("preview: ",preview, " title: ", item.title)
+                    if ( item.subtitle ){ itemCopy.preview = item.subtitle }
+                    else { itemCopy.preview = ""}
+                }
+                else {
+                    console.log("preview2: ",preview, " title2: ", itemCopy.title)
+                    itemCopy.preview = preview 
+                }
+                let nextIndex = item.searchTitle.indexOf(';', index);
+                if (nextIndex > -1){
+                    index = item.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase(),nextIndex +1)
+                }
+                else { index = -1 }
+                results2.push(itemCopy)
+            }
+        }
+        console.log("results2: ", results2)
+        ////////////////////////////
+
+        return results2;
+
+    }
+
+    findItems(searchTerm){
+
     }
  
 }
