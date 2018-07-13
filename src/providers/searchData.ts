@@ -41,86 +41,86 @@ Blære-/tarmdysfunksjon;Brått oppståtte endringer i funksjonsnivå (f.eks. tap
 Synkope (kortvarig bevissthetstap med fullstendig oppvåkning);Hjertearytmier;Vektøkning/ødemer;Tungpustet;\
 Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;Blødninger;Tumorlysesyndrom;Hyperkalsemi;Delirium;", 
                 component: Akutte_tilstanderPage},
-            {title: 'Innhold / bakgrunn',searchTitle: ";Innhold / bakgrunn;Bakgrunn;Innledning;",component: Innhold_bakgrunnPage},
+            {title: 'Innhold / bakgrunn',searchTitle: ";Innhold / bakgrunn;Bakgrunn|2;Innledning|1;",component: Innhold_bakgrunnPage},
             {title: 'Kartlegging',       searchTitle: ";Kartlegging;",       component: KartleggingPage},
-            {title: 'Kommunikasjon',     searchTitle: ";Kommunikasjon;",     component: KommunikasjonPage},
+            {title: 'Kommunikasjon',     searchTitle: ";Kommunikasjon;Forberedende samtale om livets sluttfase|1;Samtale med pårørende|2;",     component: KommunikasjonPage},
             {title: 'Prosedyrer',        searchTitle: ";Prosedyrer;",        component: ProsedyrerPage},
-            {title: 'Åndelig omsorg',    searchTitle: ";Åndelig omsorg;",    component: Aandelig_omsorgPage},
+            {title: 'Åndelig omsorg',    searchTitle: ";Åndelig omsorg;Tiltak|2;",    component: Aandelig_omsorgPage},
 
             //Symptomer
             {
                 title: 'Symptomer', 
                 subtitle: "Smerte",        
-                searchTitle: ";Symptomer;Smerte;Smerte: Tiltak;Smerte: Medikamenter og behandling;Smerte: Grunnleggende kartlegging;Skjema;",        
+                searchTitle: ";Symptomer;Smerte;Smerte: Tiltak|4;Smerte: Medikamenter og behandling|2;Smerte: Grunnleggende kartlegging|3;Skjema;",        
                 component: Symptomer1Page},
             {
                 title: 'Symptomer', 
                 subtitle: "Kvalme",        
-                searchTitle: ";Symptomer;Kvalme;Kvalme: Tiltak;Kvalme: Medikamenter og behandling;Kvalme: Grunnleggende kartlegging;",        
+                searchTitle: ";Symptomer;Kvalme|1;Kvalme: Tiltak|4;Kvalme: Medikamenter og behandling|2;Kvalme: Grunnleggende kartlegging|3;",        
                 component: Symptomer2Page},
             {
                 title: 'Symptomer', 
                 subtitle: "Angst/uro",     
-                searchTitle: ";Symptomer;Angst/uro;Angst/uro: Tiltak;Angst/uro: Medikamenter og behandling;Angst/uro: Grunnleggende kartlegging;",     
+                searchTitle: ";Symptomer;Angst/uro|1;Angst/uro: Tiltak|4;Angst/uro: Medikamenter og behandling|3;Angst/uro: Grunnleggende kartlegging|2;",     
                 component: Symptomer3Page},
             {
                 title: 'Symptomer', 
                 subtitle: "Delir",         
-                searchTitle: ";Symptomer;Delir;Delir: Tiltak;Delir: Medikamenter og behandling;Delir: Grunnleggende kartlegging;",         
+                searchTitle: ";Symptomer;Delir|1;Delir: Tiltak|4;Delir: Medikamenter og behandling|3;Delir: Grunnleggende kartlegging|2;",         
                 component: Symptomer4Page},
             {
                 title: 'Symptomer', 
                 subtitle: "Munntørr",      
-                searchTitle: ";Symptomer;Munntørr;Munntørr: Tiltak;Munntørr: Medikamenter og behandling;Munntørr: Grunnleggende kartlegging;",      
+                searchTitle: ";Symptomer;Munntørr|1;Munntørr: Tiltak|4;Munntørr: Medikamenter og behandling|3;Munntørr: Grunnleggende kartlegging|2;",      
                 component: Symptomer5Page},
             {
                 title: 'Symptomer', 
                 subtitle: "Obstipasjon",   
-                searchTitle: ";Symptomer;Obstipasjon;Obstipasjon: Tiltak;Obstipasjon: Medikamenter og behandling;Obstipasjon: Grunnleggende kartlegging;",   
+                searchTitle: ";Symptomer;Obstipasjon|1;Obstipasjon: Tiltak|4;Obstipasjon: Medikamenter og behandling|3;Obstipasjon: Grunnleggende kartlegging|2;",   
                 component: Symptomer6Page},
             {
                 title: 'Symptomer', 
                 subtitle: "Matlyst",       
-                searchTitle: ";Symptomer;Matlyst;Matlyst: Tiltak;Matlyst: Medikamenter og behandling;Matlyst: Grunnleggende kartlegging;",       
+                searchTitle: ";Symptomer;Matlyst|1;Matlyst: Tiltak|4;Matlyst: Medikamenter og behandling|3;Matlyst: Grunnleggende kartlegging|2;",       
                 component: Symptomer7Page},
             {
                 title: 'Symptomer', 
                 subtitle: "Tungpust",      
-                searchTitle: ";Symptomer;Tungpust;Tungpust: Tiltak;Tungpust: Medikamenter og behandling;Tungpust: Grunnleggende kartlegging;",      
+                searchTitle: ";Symptomer;Tungpust|1;Tungpust: Tiltak|4;Tungpust: Medikamenter og behandling|3;Tungpust: Grunnleggende kartlegging|2;",      
                 component: Symptomer8Page},
             
                 //den siste tiden
             {
-                title: 'Den siste tiden',
+                title: "Den siste tiden",
                 subtitle: "Tegn på at X er døende",      
-                searchTitle: ";Den siste tiden;Tegn på at X er døende;",        
+                searchTitle: ";Den siste tiden;Tegn på at Pasienten er døende|1;Terminalfasen|2;",        
                 component: Den_siste_tiden1Page
             },
             {
-                title: 'Den siste tiden',
+                title: "Den siste tiden",
                 subtitle: "Det gode stellet",             
-                searchTitle: ";Den siste tiden;Det gode stellet;",        
+                searchTitle: ";Den siste tiden;Det gode stellet|1;Det gode stellet: Tiltak|2;Det gode stellet: Munnstell hos døende|3;",        
                 component: Den_siste_tiden2Page},
             {
-                title: 'Den siste tiden',
+                title: "Den siste tiden",
                 subtitle: "Ikke-medikamentell behandling",
-                searchTitle: ";Den siste tiden;Ikke-medikamentell behandling;",        
+                searchTitle: ";Den siste tiden;Ikke-medikamentell behandling|1;Massasje|2;Temperatur|3;Musikk|4;Avledning|5;Tankereiser|6",        
                 component: Den_siste_tiden3Page
             },
             {
-                title: 'Den siste tiden',
+                title: "Den siste tiden",
                 subtitle: "Når døden inntreffer",          
-                searchTitle: ";Den siste tiden;Når døden inntreffer;",       
+                searchTitle: ";Den siste tiden;Når døden inntreffer|1;Når døden inntreffer: Tiltak|2",       
                 component: Den_siste_tiden4Page
             },
             {
-                title: 'Den siste tiden',
+                title: "Den siste tiden",
                 subtitle: "Medikamentskrinet / lindring av symptomer",
                 searchTitle: ";Den siste tiden;Medikamentskrinet / lindring av symptomer;",        
                 component: Den_siste_tiden5Page
             },
             {
-                title: 'Den siste tiden',
+                title: "Den siste tiden",
                 subtitle: "Ernering og væsketilførsel",   
                 searchTitle: ";Den siste tiden;Ernering og væsketilførsel;",        
                 component: Den_siste_tiden6Page
@@ -130,61 +130,43 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
     }
     
     filterItems(searchTerm){
-        let results = [];
-        results = this.items.filter((item) => {
-            let termIndex = item.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase())
-            if ( termIndex > -1){
-                let endIndex = item.searchTitle.indexOf(';', termIndex);
-                let startIndex = item.searchTitle.lastIndexOf(';',endIndex -1)
-                let preview = item.searchTitle.slice(startIndex + 1,endIndex)
-                
-                if (preview == item.title){
-                    
-                    if ( item.subtitle ){ item.preview = item.subtitle }
-                    else { item.preview = "" }
-                }
-                else { item.preview = preview }
-                return true
-            }
-            else { return false }
-        });
-        
-        //////////////////////// TEST
-        let results2 = []
+        let results = []
         for (let i = 0; i < this.items.length; i++){
             let item = this.items[i]
             let index = item.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase())
+            
             while ( index != -1){
+                
                 let itemCopy = Object.assign({},this.items[i])
-                let endIndex = item.searchTitle.indexOf(';', index);
-                let startIndex = item.searchTitle.lastIndexOf(';',endIndex -1)
-                let preview = item.searchTitle.slice(startIndex + 1,endIndex)
-                if (preview == item.title){
-                    console.log("preview: ",preview, " title: ", item.title)
-                    if ( item.subtitle ){ itemCopy.preview = item.subtitle }
-                    else { itemCopy.preview = ""}
+                let endIndex = itemCopy.searchTitle.indexOf(';', index);
+                let startIndex = itemCopy.searchTitle.lastIndexOf(';', index - 1)
+                let preview = itemCopy.searchTitle.slice(startIndex + 1,endIndex)
+                let id = this.findId(preview)
+                console.log("the ID is: ", id)
+                if (id != -1 ) { preview = preview.slice(0, -2)}
+                itemCopy.id = id
+
+
+                if (preview == itemCopy.title){
+                    if ( itemCopy.subtitle && itemCopy.subtitle.toLowerCase().indexOf(searchTerm.toLowerCase()) == -1 ){ 
+                        itemCopy.preview = itemCopy.subtitle
+                    }
+                    else { itemCopy.preview = ""}  
                 }
-                else {
-                    console.log("preview2: ",preview, " title2: ", itemCopy.title)
-                    itemCopy.preview = preview 
-                }
-                let nextIndex = item.searchTitle.indexOf(';', index);
-                if (nextIndex > -1){
-                    index = item.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase(),nextIndex +1)
-                }
-                else { index = -1 }
-                results2.push(itemCopy)
+                else { itemCopy.preview = preview }
+
+                let nextIndex = itemCopy.searchTitle.indexOf(';', index);
+                index = nextIndex > -1 ? itemCopy.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase(),nextIndex +1) : -1
+                results.push(itemCopy)
+
             }
         }
-        console.log("results2: ", results2)
-        ////////////////////////////
-
-        return results2;
-
+        return results;
     }
 
-    findItems(searchTerm){
-
+    findId(string){
+        let index = string.lastIndexOf('|')
+        return index != -1 ? string.slice(index + 1) : -1
     }
  
 }

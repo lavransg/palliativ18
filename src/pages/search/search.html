@@ -22,12 +22,12 @@
 <ion-content>
 
     <ion-list>
-      <ion-item text-wrap *ngFor="let result of results" (click)="goToPage(result.component)">
+      <ion-item text-wrap *ngFor="let result of results" (click)="goToPage(result.component,result.id)">
         
           <ion-row>
             <ion-col col-11>
               <b>{{result.title}}</b>
-              <br>{{result.preview}}
+              <br>{{result.preview}} 
             </ion-col>
             <ion-col col-1>
               <ion-icon name="arrow-forward"></ion-icon>

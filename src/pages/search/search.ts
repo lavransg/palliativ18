@@ -39,8 +39,10 @@ export class SearchPage {
     this.navCtrl.pop();
   }
 
-  goToPage(component){
-    this.navCtrl.push(component)
+  goToPage(component,id){
+    console.log("going to ID: ",id)
+    this.navCtrl.push(component, {id: id})
+    this.navCtrl.remove(1);
   }
 
 
