@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Content } from 'ionic-angular';
 import { NavController, NavParams } from 'ionic-angular';
+
 @Component({
   selector: 'page-innhold_bakgrunn',
   templateUrl: 'innhold_bakgrunn.html'

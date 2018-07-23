@@ -16,14 +16,19 @@ page-home {
     .buttons-container{
         align-self: center;
         max-width: 500px;
+        padding-top: 30px;
     }
 
-    @media screen and (max-height : 600px) {
+    @media screen and (max-height : 640px) {
         .button-container{
             padding-left: 0px;
             padding-right: 0px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             font-size: 1.1rem;
+        }
+
+        .buttons-container{
+            padding-top: 20px;
         }
 
         .button-image{

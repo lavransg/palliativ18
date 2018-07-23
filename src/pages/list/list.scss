@@ -2,4 +2,14 @@ page-list {
     .header-fixed{
         height: 100px;
     }
+
+    .list-content{
+        margin-top: 10px;
+    }
+
+    .vertical-center{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

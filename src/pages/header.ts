@@ -10,6 +10,11 @@ import { SearchPage } from './search/search';
   template:
   `
   <!--<ion-toolbar>-->
+    <ion-row class="menu-header">
+      <ion-col col-2></ion-col>
+      <ion-col col-8><b>{{title}}</b></ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
     <div class="header-fixed">
         <ion-row class="header-shadow">
             <ion-col col-2>
@@ -20,11 +25,6 @@ import { SearchPage } from './search/search';
             <ion-col col-2><ion-icon name="search" (click)=searchButtonClicked()></ion-icon></ion-col>
         </ion-row>
     </div>
-    <ion-row class="menu-header">
-      <ion-col col-2></ion-col>
-      <ion-col col-8><b>{{title}}</b></ion-col>
-      <ion-col col-2></ion-col>
-    </ion-row>
     <!--</ion-toolbar>-->
   `
 })
@@ -41,7 +41,6 @@ export class HeaderBar {
   }
 
   searchButtonClicked(){
-    console.log("searchPage clicked")
     this.navCtrl.push(SearchPage,{animate: true, direction: "down"})
   }
 }

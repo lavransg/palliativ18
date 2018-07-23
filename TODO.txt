@@ -15,5 +15,15 @@ x ) bedre visning av tekst-innhold
 
 ) lazy-loading
 
-) låse rotering
+x ) låse rotering
+
+) loading-skjerm
+
+) menu-bar hvit bakgrunn
+
+) logo på framsiden
+
+x ) vertikalt sentrer pil i søk
+
+) en enkelt page-komponent med ngif for html templates
 

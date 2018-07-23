@@ -27,47 +27,17 @@ $searchbar-ios-border-color: transparent;
     background: transparent;
 }
 
-.scroll-content{
-    padding-top: 30px;
-}
-
 .list-ios > .item-block:first-child {
     border-top-width: 0px;
 }
 
+.scroll-content{
+    padding-top: 10px;
+}
+
 .header{
-    max-height: 85px !important;
+    //max-height: 85px !important;
 }
-/*
-.header{
-    background: rgba(255, 255, 255, 0) !important;
-    //background-clip: content-box !important;
-    //border: none !important;
-    //z-index: 0 !important;
-    //display: inline !important;
-    //position: absolute !important;
-    //box-sizing: content-box !important;
-    //background-origin: content-box;
-    //height: 0px;
-    width: 100%;
-    opacity: 0;
-    z-index: -1;
-    font-size: 3rem;
-    margin-bottom: 30px;
-    background-clip: content-box;
-    font-family: 'Varela Round', sans-serif;
-}
-
-.ion-header{
-    //z-index: -5 !important;
-}
-
-.toolbar-content{
-    background: rgba(255, 255, 255, 0) !important;
-    
-}
-*/
-
 
 .menu-header{
     width: 100%;
@@ -107,6 +77,7 @@ $searchbar-ios-border-color: transparent;
 .page-content{
     z-index: 1;
     max-width: 700px;
+    min-height: calc(100% - 70px);
     padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 70px;
@@ -139,16 +110,18 @@ ul{
     padding-left: 10px;
 }
 
-@media screen and (max-height : 600px) {
+@media screen and (max-height : 640px) {
     .header-fixed{
         font-size: 2.5rem;
     }
-
-    
 
     .header-shadow{
         box-shadow: 0 12px 35px 35px white;
         -webkit-box-shadow: 0 12px 35px 35px white;
         -moz-box-shadow: 0 12px 35px 35px white;
+    }
+
+    .scroll-content{
+        padding-top: 20px;
     }
 }

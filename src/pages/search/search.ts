@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { HomePage } from '../home/home';
 import { SearchData } from '../../providers/searchData';
 
 @Component({
@@ -40,11 +39,9 @@ export class SearchPage {
   }
 
   goToPage(component,id){
-    console.log("going to ID: ",id)
     this.navCtrl.push(component, {id: id})
     this.navCtrl.remove(1);
   }
-
 
 
 }

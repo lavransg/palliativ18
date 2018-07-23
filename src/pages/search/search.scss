@@ -1,4 +1,8 @@
 page-search{
+
+    .scroll-content{
+        padding-bottom: 50%;
+    }
     
     .list{
         margin-top: 100px;
@@ -33,6 +37,12 @@ page-search{
         font-size: 1.5rem;
         font-family: 'Varela Round', sans-serif;
         color: rgb(136, 136, 136);
+    }
+
+    .vertical-center{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
 }

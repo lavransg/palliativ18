@@ -1,8 +1,8 @@
 
 <ion-header><header-bar [title]="title"></header-bar></ion-header>
-<ion-content>
+<ion-content no-bounce>
 
-  <ion-list>
+  <ion-list class="list-content">
     <ion-item text-wrap class="list-item" *ngFor="let page of pages" (click)="goToPage(page.component)">
       
         <ion-row>
