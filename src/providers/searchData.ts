@@ -142,7 +142,6 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
                 let startIndex = itemCopy.searchTitle.lastIndexOf(';', index - 1)
                 let preview = itemCopy.searchTitle.slice(startIndex + 1,endIndex)
                 let id = this.findId(preview)
-                console.log("the ID is: ", id)
                 if (id != -1 ) { preview = preview.slice(0, -2)}
                 itemCopy.id = id
 

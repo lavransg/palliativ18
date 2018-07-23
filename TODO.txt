@@ -5,6 +5,15 @@ x ) dypere søkefunksjon
 
 ? ) pwa popup
 
-) bedre visning av tekst-innhold
+x ) bedre visning av tekst-innhold
 
 ) app-ikon
+
+) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter?
+
+) forbedre ikoner?
+
+) lazy-loading
+
+) låse rotering
+
