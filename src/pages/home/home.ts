@@ -88,7 +88,7 @@ export class HomePage {
     let page;
     switch(button){
       case 2:
-        this.navCtrl.push("ListPage", {
+        this.navCtrl.push(ListPage, {
           title: "Symptomer",
           pages: this.symptomer
         });

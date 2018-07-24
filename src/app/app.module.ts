@@ -6,7 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-//import { ListPage } from '../pages/list/list';
+import { ListPage } from '../pages/list/list';
 import { InformationPage } from '../pages/information/information';
 import { HeaderBarModule } from '../pages/header.module';
 import { SearchPage } from '../pages/search/search';
@@ -39,7 +39,7 @@ import { Den_siste_tiden6Page } from '../pages/den_siste_tiden/6/den_siste_tiden
   declarations: [
     MyApp,
     HomePage,
-    //ListPage,
+    ListPage,
     InformationPage,
     SearchPage,
     Symptomer1Page, Symptomer2Page, Symptomer3Page, Symptomer4Page,
@@ -62,7 +62,7 @@ import { Den_siste_tiden6Page } from '../pages/den_siste_tiden/6/den_siste_tiden
   entryComponents: [
     MyApp,
     HomePage,
-    //ListPage,
+    ListPage,
     InformationPage,
     SearchPage,
     Symptomer1Page,Symptomer2Page,Symptomer3Page,Symptomer4Page,
