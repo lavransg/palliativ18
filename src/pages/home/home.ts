@@ -19,12 +19,12 @@ import { Den_siste_tiden4Page } from '../den_siste_tiden/4/den_siste_tiden4';
 import { Den_siste_tiden5Page } from '../den_siste_tiden/5/den_siste_tiden5';
 import { Den_siste_tiden6Page } from '../den_siste_tiden/6/den_siste_tiden6';
 
-import { Akutte_tilstanderPage } from '../akutte_tilstander/akutte_tilstander';
+/* import { Akutte_tilstanderPage } from '../akutte_tilstander/akutte_tilstander';
 import { Innhold_bakgrunnPage } from '../innhold_bakgrunn/innhold_bakgrunn';
 import { KartleggingPage } from '../kartlegging/kartlegging';
 import { KommunikasjonPage } from '../kommunikasjon/kommunikasjon';
 import { ProsedyrerPage } from '../prosedyrer/prosedyrer';
-import { Aandelig_omsorgPage } from '../aandelig_omsorg/aandelig_omsorg';
+import { Aandelig_omsorgPage } from '../aandelig_omsorg/aandelig_omsorg'; */
 
 @Component({
   selector: 'page-home',
@@ -88,7 +88,7 @@ export class HomePage {
     let page;
     switch(button){
       case 2:
-        this.navCtrl.push(ListPage, {
+        this.navCtrl.push("ListPage", {
           title: "Symptomer",
           pages: this.symptomer
         });
@@ -99,17 +99,17 @@ export class HomePage {
           pages: this.denSisteTiden
         });
         break;
-      case 1: page = Innhold_bakgrunnPage
+      case 1: page = "Innhold_bakgrunnPage"
         break;
-      case 3: page = Akutte_tilstanderPage
+      case 3: page = "Akutte_tilstanderPage"
         break;
-      case 4: page = KommunikasjonPage
+      case 4: page = "KommunikasjonPage"
         break;
-      case 5: page = Aandelig_omsorgPage
+      case 5: page = "Aandelig_omsorgPage"
         break; 
-      case 7: page = ProsedyrerPage
+      case 7: page = "ProsedyrerPage"
         break;
-      case 8: page = KartleggingPage
+      case 8: page = "KartleggingPage"
         break;
       case 9: // foreløpig tom
         break;

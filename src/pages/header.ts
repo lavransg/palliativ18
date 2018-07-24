@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { InformationPage } from './information/information';
@@ -29,6 +29,7 @@ import { SearchPage } from './search/search';
   `
 })
 export class HeaderBar {
+
   constructor(public navCtrl: NavController,) {   
   }
 

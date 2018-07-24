@@ -1,6 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { Content } from 'ionic-angular';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, IonicPage } from 'ionic-angular';
+
+@IonicPage()
 @Component({
   selector: 'page-åndelig_omsorg',
   templateUrl: 'aandelig_omsorg.html'
@@ -11,7 +13,6 @@ export class Aandelig_omsorgPage {
 
   constructor(public navCtrl: NavController,public navParams: NavParams) {
   }
-
   
   @ViewChild(Content) content: Content;
 

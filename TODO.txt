@@ -1,29 +1,39 @@
 
-? ) button-press feedback
 
-x ) dypere søkefunksjon
 
-? ) pwa popup
+) en enkelt page-komponent med ngif for html templates
 
-x ) bedre visning av tekst-innhold
+) fikse frysing ved scrolling på bunnen av sider
 
-) app-ikon
+) større skrift på list og søk for mobiler med store skjermer
 
-) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter?
+) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? FIKS når_døden_intreffer, sidene er i feil komponent
 
 ) forbedre ikoner?
 
 ) lazy-loading
 
+) pass på at rootPage funker etter implementasjon av lazy-loading
+
+) husk å fjerne service-worker osv når appen bygges til produksjon
+
+? ) logo på framsiden
+
+? ) app-ikon
+
+? ) pwa popup
+
+? ) button-press feedback
+
+x ) bedre visning av tekst-innhold
+
+x ) dypere søkefunksjon
+
 x ) låse rotering
 
-) loading-skjerm
+x ) loading-skjerm
 
-) menu-bar hvit bakgrunn
-
-) logo på framsiden
+x ) status-bar hvit bakgrunn
 
 x ) vertikalt sentrer pil i søk
-
-) en enkelt page-komponent med ngif for html templates
 

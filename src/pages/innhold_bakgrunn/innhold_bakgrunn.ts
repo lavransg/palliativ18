@@ -1,16 +1,17 @@
 import { Component, ViewChild } from '@angular/core';
 import { Content } from 'ionic-angular';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-innhold_bakgrunn',
   templateUrl: 'innhold_bakgrunn.html'
 })
 export class Innhold_bakgrunnPage {
 
-   title: string = "Innhold / bakgrunn"
+  title: string = "Innhold / bakgrunn"
 
-   constructor(public navCtrl: NavController,public navParams: NavParams) {
+  constructor(public navCtrl: NavController,public navParams: NavParams) {
   }
 
   

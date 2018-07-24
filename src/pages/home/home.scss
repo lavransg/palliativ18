@@ -1,4 +1,11 @@
 page-home {
+    /*
+    .scroll-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    */
 
     .button-container{
         z-index: 2;
@@ -14,9 +21,17 @@ page-home {
     }
 
     .buttons-container{
-        align-self: center;
         max-width: 500px;
         padding-top: 30px;
+    }
+
+    .logo-container{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .logo{
+        max-width: 60%;
     }
 
     @media screen and (max-height : 640px) {
@@ -34,6 +49,7 @@ page-home {
         .button-image{
             max-height: 70px;
         }
+
     }
 
 }
