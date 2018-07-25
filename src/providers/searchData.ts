@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 
-import { Symptomer1Page } from '../pages/symptomer/1/symptomer1';
+/* import { Symptomer1Page } from '../pages/symptomer/1/symptomer1';
 import { Symptomer2Page } from '../pages/symptomer/2/symptomer2';
 import { Symptomer3Page } from '../pages/symptomer/3/symptomer3';
 import { Symptomer4Page } from '../pages/symptomer/4/symptomer4';
@@ -22,7 +22,7 @@ import { Innhold_bakgrunnPage } from '../pages/innhold_bakgrunn/innhold_bakgrunn
 import { KartleggingPage } from '../pages/kartlegging/kartlegging';
 import { KommunikasjonPage } from '../pages/kommunikasjon/kommunikasjon';
 import { ProsedyrerPage } from '../pages/prosedyrer/prosedyrer';
-import { Aandelig_omsorgPage } from '../pages/aandelig_omsorg/aandelig_omsorg';
+import { Aandelig_omsorgPage } from '../pages/aandelig_omsorg/aandelig_omsorg'; */
  
 @Injectable()
 export class SearchData {
@@ -40,90 +40,90 @@ Blære-/tarmdysfunksjon;Brått oppståtte endringer i funksjonsnivå (f.eks. tap
 Økt trykk fra hjernemetastaser;Endret bevissthet/stemningsleie;Akutt svimmelhet;Kramper;\
 Synkope (kortvarig bevissthetstap med fullstendig oppvåkning);Hjertearytmier;Vektøkning/ødemer;Tungpustet;\
 Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;Blødninger;Tumorlysesyndrom;Hyperkalsemi;Delirium;", 
-                component: Akutte_tilstanderPage},
-            {title: 'Innhold / bakgrunn',searchTitle: ";Innhold / bakgrunn;Bakgrunn|2;Innledning|1;",component: Innhold_bakgrunnPage},
-            {title: 'Kartlegging',       searchTitle: ";Kartlegging;",       component: KartleggingPage},
-            {title: 'Kommunikasjon',     searchTitle: ";Kommunikasjon;Forberedende samtale om livets sluttfase|1;Samtale med pårørende|2;",     component: KommunikasjonPage},
-            {title: 'Prosedyrer',        searchTitle: ";Prosedyrer;",        component: ProsedyrerPage},
-            {title: 'Åndelig omsorg',    searchTitle: ";Åndelig omsorg;Tiltak|2;",    component: Aandelig_omsorgPage},
+                component: "Akutte_tilstanderPage"},
+            {title: 'Innhold / bakgrunn',searchTitle: ";Innhold / bakgrunn;Bakgrunn|2;Innledning|1;",component: "Innhold_bakgrunnPage"},
+            {title: 'Kartlegging',       searchTitle: ";Kartlegging;",       component: "KartleggingPage"},
+            {title: 'Kommunikasjon',     searchTitle: ";Kommunikasjon;Forberedende samtale om livets sluttfase|1;Samtale med pårørende|2;",     component: "KommunikasjonPage"},
+            {title: 'Prosedyrer',        searchTitle: ";Prosedyrer;",        component: "ProsedyrerPage"},
+            {title: 'Åndelig omsorg',    searchTitle: ";Åndelig omsorg;Tiltak|2;",    component: "Aandelig_omsorgPage"},
 
             //Symptomer
             {
                 title: 'Symptomer', 
                 subtitle: "Smerte",        
                 searchTitle: ";Symptomer;Smerte;Smerte: Tiltak|4;Smerte: Medikamenter og behandling|2;Smerte: Grunnleggende kartlegging|3;Skjema;",        
-                component: Symptomer1Page},
+                component: "Symptomer1Page"},
             {
                 title: 'Symptomer', 
                 subtitle: "Kvalme",        
                 searchTitle: ";Symptomer;Kvalme|1;Kvalme: Tiltak|4;Kvalme: Medikamenter og behandling|2;Kvalme: Grunnleggende kartlegging|3;",        
-                component: Symptomer2Page},
+                component: "Symptomer2Page"},
             {
                 title: 'Symptomer', 
                 subtitle: "Angst/uro",     
                 searchTitle: ";Symptomer;Angst/uro|1;Angst/uro: Tiltak|4;Angst/uro: Medikamenter og behandling|3;Angst/uro: Grunnleggende kartlegging|2;",     
-                component: Symptomer3Page},
+                component: "Symptomer3Page"},
             {
                 title: 'Symptomer', 
                 subtitle: "Delir",         
                 searchTitle: ";Symptomer;Delir|1;Delir: Tiltak|4;Delir: Medikamenter og behandling|3;Delir: Grunnleggende kartlegging|2;",         
-                component: Symptomer4Page},
+                component: "Symptomer4Page"},
             {
                 title: 'Symptomer', 
                 subtitle: "Munntørr",      
                 searchTitle: ";Symptomer;Munntørr|1;Munntørr: Tiltak|4;Munntørr: Medikamenter og behandling|3;Munntørr: Grunnleggende kartlegging|2;",      
-                component: Symptomer5Page},
+                component: "Symptomer5Page"},
             {
                 title: 'Symptomer', 
                 subtitle: "Obstipasjon",   
                 searchTitle: ";Symptomer;Obstipasjon|1;Obstipasjon: Tiltak|4;Obstipasjon: Medikamenter og behandling|3;Obstipasjon: Grunnleggende kartlegging|2;",   
-                component: Symptomer6Page},
+                component: "Symptomer6Page"},
             {
                 title: 'Symptomer', 
                 subtitle: "Matlyst",       
                 searchTitle: ";Symptomer;Matlyst|1;Matlyst: Tiltak|4;Matlyst: Medikamenter og behandling|3;Matlyst: Grunnleggende kartlegging|2;",       
-                component: Symptomer7Page},
+                component: "Symptomer7Page"},
             {
                 title: 'Symptomer', 
                 subtitle: "Tungpust",      
                 searchTitle: ";Symptomer;Tungpust|1;Tungpust: Tiltak|4;Tungpust: Medikamenter og behandling|3;Tungpust: Grunnleggende kartlegging|2;",      
-                component: Symptomer8Page},
+                component: "Symptomer8Page"},
             
                 //den siste tiden
             {
                 title: "Den siste tiden",
                 subtitle: "Tegn på at X er døende",      
                 searchTitle: ";Den siste tiden;Tegn på at Pasienten er døende|1;Terminalfasen|2;",        
-                component: Den_siste_tiden1Page
+                component: "Den_siste_tiden1Page"
             },
             {
                 title: "Den siste tiden",
                 subtitle: "Det gode stellet",             
                 searchTitle: ";Den siste tiden;Det gode stellet|1;Det gode stellet: Tiltak|2;Det gode stellet: Munnstell hos døende|3;",        
-                component: Den_siste_tiden2Page},
+                component: "Den_siste_tiden2Page"},
             {
                 title: "Den siste tiden",
                 subtitle: "Ikke-medikamentell behandling",
                 searchTitle: ";Den siste tiden;Ikke-medikamentell behandling|1;Massasje|2;Temperatur|3;Musikk|4;Avledning|5;Tankereiser|6;",        
-                component: Den_siste_tiden3Page
+                component: "Den_siste_tiden3Page"
             },
             {
                 title: "Den siste tiden",
                 subtitle: "Når døden inntreffer",          
                 searchTitle: ";Den siste tiden;Når døden inntreffer|1;Når døden inntreffer: Tiltak|2;",       
-                component: Den_siste_tiden4Page
+                component: "Den_siste_tiden4Page"
             },
             {
                 title: "Den siste tiden",
                 subtitle: "Medikamentskrinet / lindring av symptomer",
                 searchTitle: ";Den siste tiden;Medikamentskrinet / lindring av symptomer;",        
-                component: Den_siste_tiden5Page
+                component: "Den_siste_tiden5Page"
             },
             {
                 title: "Den siste tiden",
                 subtitle: "Ernering og væsketilførsel",   
                 searchTitle: ";Den siste tiden;Ernering og væsketilførsel;",        
-                component: Den_siste_tiden6Page
+                component: "Den_siste_tiden6Page"
             },
         ]
  

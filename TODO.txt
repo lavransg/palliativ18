@@ -17,6 +17,8 @@
 
 ) husk å fjerne service-worker osv når appen bygges til produksjon
 
+) fiks scrollTo for komponenter som allerede er besøkt
+
 ? ) logo på framsiden
 
 ? ) app-ikon

@@ -17,19 +17,18 @@ export class SearchPage {
 
   }
 
-  onInput(event){
-    if(this.searchbarInput == ""){
-      this.results = [];
-    }
+  onInput(){
+    if(this.searchbarInput == ""){ this.results = []; }
     else{
       this.results = this.searchData.filterItems(this.searchbarInput);
+      
       if ( this.results.length == 0 ){ this.showEmptyResults = true }
       else { this.showEmptyResults = false }
     }
     
   }
 
-  onCancel(event){
+  onCancel(){
     this.searchbarInput = "";
     this.results = [];
   }

@@ -1,6 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { Content } from 'ionic-angular';
+import { Content, IonicPage } from 'ionic-angular';
 import { NavController, NavParams } from 'ionic-angular';
+
+@IonicPage()
 @Component({
   selector: 'page-den_siste_tiden2',
   templateUrl: 'den_siste_tiden2.html'
@@ -16,6 +18,7 @@ export class Den_siste_tiden2Page {
   @ViewChild(Content) content: Content;
 
   ionViewDidEnter(){ 
+    console.log("ionViewDidEnter")
     let id = this.navParams.get('id')
     if (id && id != -1){
       this.scrollTo("element"+id)
@@ -33,7 +36,7 @@ export class Den_siste_tiden2Page {
       var top  = box.top +  scrollTop - clientTop;
       var cDim = this.content.getContentDimensions();
       var scrollOffset = Math.round(top) + cDim.scrollTop - cDim.contentTop;
-      this.content.scrollTo(0, scrollOffset-20, 500);
+      this.content.scrollTo(0, scrollOffset - 70, 500);
     }
   }
 

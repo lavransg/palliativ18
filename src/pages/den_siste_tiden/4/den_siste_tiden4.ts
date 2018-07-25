@@ -1,6 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { Content } from 'ionic-angular';
+import { Content, IonicPage } from 'ionic-angular';
 import { NavController, NavParams } from 'ionic-angular';
+
+@IonicPage()
 @Component({
   selector: 'page-den_siste_tiden4',
   templateUrl: 'den_siste_tiden4.html'

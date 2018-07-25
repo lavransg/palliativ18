@@ -34,7 +34,13 @@ export class HeaderBar {
   }
 
   backButtonClicked(){
-    this.navCtrl.pop()
+    if ( this.navCtrl.length() < 2 ) {
+      this.navCtrl.push("HomePage")
+    }
+    else {
+      this.navCtrl.pop()
+    }
+    
   }
 
   infoButtonClicked(){

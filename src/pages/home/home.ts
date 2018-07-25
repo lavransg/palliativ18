@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 
-import { ListPage } from '../list/list';
+/* import { ListPage } from '../list/list'; */
 
-import {Symptomer1Page} from '../symptomer/1/symptomer1';
+/* import {Symptomer1Page} from '../symptomer/1/symptomer1';
 import {Symptomer2Page} from '../symptomer/2/symptomer2';
 import {Symptomer3Page} from '../symptomer/3/symptomer3';
 import {Symptomer4Page} from '../symptomer/4/symptomer4';
@@ -17,7 +17,7 @@ import { Den_siste_tiden2Page } from '../den_siste_tiden/2/den_siste_tiden2';
 import { Den_siste_tiden3Page } from '../den_siste_tiden/3/den_siste_tiden3';
 import { Den_siste_tiden4Page } from '../den_siste_tiden/4/den_siste_tiden4';
 import { Den_siste_tiden5Page } from '../den_siste_tiden/5/den_siste_tiden5';
-import { Den_siste_tiden6Page } from '../den_siste_tiden/6/den_siste_tiden6';
+import { Den_siste_tiden6Page } from '../den_siste_tiden/6/den_siste_tiden6'; */
 
 /* import { Akutte_tilstanderPage } from '../akutte_tilstander/akutte_tilstander';
 import { Innhold_bakgrunnPage } from '../innhold_bakgrunn/innhold_bakgrunn';
@@ -26,6 +26,7 @@ import { KommunikasjonPage } from '../kommunikasjon/kommunikasjon';
 import { ProsedyrerPage } from '../prosedyrer/prosedyrer';
 import { Aandelig_omsorgPage } from '../aandelig_omsorg/aandelig_omsorg'; */
 
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -37,7 +38,7 @@ export class HomePage {
   showBtn: boolean = false;
   deferredPrompt;
 
-  symptomer: any[] = [
+/*   symptomer: any[] = [
     {title: "Smerte",     component: Symptomer1Page},
     {title: "Kvalme",     component: Symptomer2Page},
     {title: "Angst/uro",  component: Symptomer3Page},
@@ -54,7 +55,7 @@ export class HomePage {
     {title: 'Når døden intreffer',                      component: Den_siste_tiden4Page},
     {title: 'Medikamentskrinet / lindring av symptomer',component: Den_siste_tiden5Page},
     {title: 'Ernering og væsketilførsel',               component: Den_siste_tiden6Page},
-  ]
+  ] */
 
   constructor(public navCtrl: NavController) {
 
@@ -88,15 +89,13 @@ export class HomePage {
     let page;
     switch(button){
       case 2:
-        this.navCtrl.push(ListPage, {
-          title: "Symptomer",
-          pages: this.symptomer
+        this.navCtrl.push("ListPage", {
+          pages: "symptomer"
         });
         break;
       case 6:
-        this.navCtrl.push(ListPage, {
-          title: "Den siste tiden",
-          pages: this.denSisteTiden
+        this.navCtrl.push("ListPage", {
+          pages: "denSisteTiden"
         });
         break;
       case 1: page = "Innhold_bakgrunnPage"

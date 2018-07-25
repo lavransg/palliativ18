@@ -7,4 +7,11 @@ page-list {
         margin-top: 10px;
     }
 
+    @media screen and (min-height : 640px) {
+    
+        .label{
+            font-size: 2rem !important;
+        }
+    }
+
 }

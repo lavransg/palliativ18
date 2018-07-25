@@ -1,6 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { Content } from 'ionic-angular';
+import { Content, IonicPage } from 'ionic-angular';
 import { NavController, NavParams } from 'ionic-angular';
+
+@IonicPage()
 @Component({
   selector: 'page-symptomer6',
   templateUrl: 'symptomer6.html'

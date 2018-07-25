@@ -5,14 +5,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+//import { HomePage } from '../pages/home/home';
+//import { ListPage } from '../pages/list/list';
 import { InformationPage } from '../pages/information/information';
 import { HeaderBarModule } from '../pages/header.module';
 import { SearchPage } from '../pages/search/search';
 import { SearchData } from '../providers/searchData';
 
-import { Symptomer1Page } from '../pages/symptomer/1/symptomer1';
+/* import { Symptomer1Page } from '../pages/symptomer/1/symptomer1';
 import { Symptomer2Page } from '../pages/symptomer/2/symptomer2';
 import { Symptomer3Page } from '../pages/symptomer/3/symptomer3';
 import { Symptomer4Page } from '../pages/symptomer/4/symptomer4';
@@ -26,7 +26,7 @@ import { Den_siste_tiden2Page } from '../pages/den_siste_tiden/2/den_siste_tiden
 import { Den_siste_tiden3Page } from '../pages/den_siste_tiden/3/den_siste_tiden3';
 import { Den_siste_tiden4Page } from '../pages/den_siste_tiden/4/den_siste_tiden4';
 import { Den_siste_tiden5Page } from '../pages/den_siste_tiden/5/den_siste_tiden5';
-import { Den_siste_tiden6Page } from '../pages/den_siste_tiden/6/den_siste_tiden6';
+import { Den_siste_tiden6Page } from '../pages/den_siste_tiden/6/den_siste_tiden6'; */
 
 //import { Akutte_tilstanderPage } from '../pages/akutte_tilstander/akutte_tilstander';
 //import { Innhold_bakgrunnPage } from '../pages/innhold_bakgrunn/innhold_bakgrunn';
@@ -38,14 +38,14 @@ import { Den_siste_tiden6Page } from '../pages/den_siste_tiden/6/den_siste_tiden
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage,
+    //HomePage,
+    //ListPage,
     InformationPage,
     SearchPage,
-    Symptomer1Page, Symptomer2Page, Symptomer3Page, Symptomer4Page,
+/*     Symptomer1Page, Symptomer2Page, Symptomer3Page, Symptomer4Page,
     Symptomer5Page, Symptomer6Page, Symptomer7Page, Symptomer8Page,
     Den_siste_tiden1Page, Den_siste_tiden2Page, Den_siste_tiden3Page,
-    Den_siste_tiden4Page, Den_siste_tiden5Page, Den_siste_tiden6Page,
+    Den_siste_tiden4Page, Den_siste_tiden5Page, Den_siste_tiden6Page, */
     //Akutte_tilstanderPage,
     //Innhold_bakgrunnPage,
     //KartleggingPage,
@@ -61,14 +61,14 @@ import { Den_siste_tiden6Page } from '../pages/den_siste_tiden/6/den_siste_tiden
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage,
+    //HomePage,
+    //ListPage,
     InformationPage,
     SearchPage,
-    Symptomer1Page,Symptomer2Page,Symptomer3Page,Symptomer4Page,
+/*     Symptomer1Page,Symptomer2Page,Symptomer3Page,Symptomer4Page,
     Symptomer5Page,Symptomer6Page,Symptomer7Page,Symptomer8Page,
     Den_siste_tiden1Page, Den_siste_tiden2Page, Den_siste_tiden3Page,
-    Den_siste_tiden4Page, Den_siste_tiden5Page, Den_siste_tiden6Page,
+    Den_siste_tiden4Page, Den_siste_tiden5Page, Den_siste_tiden6Page, */
     //Akutte_tilstanderPage,
     //Innhold_bakgrunnPage,
     //KartleggingPage,

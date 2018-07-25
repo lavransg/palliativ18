@@ -19,11 +19,20 @@
 //$searchbar-ios-toolbar-input-background: rgba(0, 0, 0, 0);
 $searchbar-ios-input-background-color: lightgrey;
 $searchbar-ios-border-color: transparent;
+$searchbar-md-background-color: transparent;
+
+//$searchbar-md-input-border-radius: 0px;
+//$searchbar-md-background-color: transparent;
 
 .body{
-    font-family: 'Varela Round', sans-serif;
+    //font-family: 'Varela Round', sans-serif;
 }
 .searchbar-ios{
+    background: transparent;
+    border-color: transparent;
+}
+
+.searchbar-md{
     background: transparent;
 }
 
@@ -33,6 +42,7 @@ $searchbar-ios-border-color: transparent;
 
 .scroll-content{
     padding-top: 20px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .header{
