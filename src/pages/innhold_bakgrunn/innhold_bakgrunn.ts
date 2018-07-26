@@ -11,9 +11,7 @@ export class Innhold_bakgrunnPage {
 
   title: string = "Innhold / bakgrunn"
 
-  constructor(public navCtrl: NavController,public navParams: NavParams) {
-  }
-
+  constructor(public navCtrl: NavController,public navParams: NavParams) {}
   
   @ViewChild(Content) content: Content;
 
@@ -35,7 +33,7 @@ export class Innhold_bakgrunnPage {
       var top  = box.top +  scrollTop - clientTop;
       var cDim = this.content.getContentDimensions();
       var scrollOffset = Math.round(top) + cDim.scrollTop - cDim.contentTop;
-      this.content.scrollTo(0, scrollOffset-20, 500);
+      this.content.scrollTo(0, scrollOffset-30, 500);
     }
   }
 

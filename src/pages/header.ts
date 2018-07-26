@@ -30,7 +30,7 @@ import { SearchPage } from './search/search';
 })
 export class HeaderBar {
 
-  constructor(public navCtrl: NavController,) {   
+  constructor(public navCtrl: NavController) {   
   }
 
   backButtonClicked(){
@@ -40,7 +40,6 @@ export class HeaderBar {
     else {
       this.navCtrl.pop()
     }
-    
   }
 
   infoButtonClicked(){

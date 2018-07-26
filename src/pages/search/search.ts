@@ -13,13 +13,11 @@ export class SearchPage {
   results: any[];
   showEmptyResults: boolean = false;
 
-  constructor(public navCtrl: NavController, public searchData: SearchData) {
-
-  }
+  constructor(public navCtrl: NavController, public searchData: SearchData) {}
 
   onInput(){
-    if(this.searchbarInput == ""){ this.results = []; }
-    else{
+    if (this.searchbarInput == ""){ this.results = []; }
+    else {
       this.results = this.searchData.filterItems(this.searchbarInput);
       
       if ( this.results.length == 0 ){ this.showEmptyResults = true }

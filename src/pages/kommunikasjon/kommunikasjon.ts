@@ -34,7 +34,7 @@ export class KommunikasjonPage {
       var top  = box.top +  scrollTop - clientTop;
       var cDim = this.content.getContentDimensions();
       var scrollOffset = Math.round(top) + cDim.scrollTop - cDim.contentTop;
-      this.content.scrollTo(0, scrollOffset-20, 500);
+      this.content.scrollTo(0, scrollOffset-30, 500);
     }
   }
  

@@ -5,19 +5,21 @@
 
 ) fikse frysing ved scrolling på bunnen av sider
 
-) større skrift på list og søk for mobiler med store skjermer
-
 ) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? FIKS når_døden_intreffer, sidene er i feil komponent
 
 ) forbedre ikoner?
 
-) lazy-loading
-
-) pass på at rootPage funker etter implementasjon av lazy-loading
-
 ) husk å fjerne service-worker osv når appen bygges til produksjon
 
-) fiks scrollTo for komponenter som allerede er besøkt
+) fiks scrollTo for komponenter som allerede er besøkt?
+
+) gå over scrollto-IDene
+
+) tweake scrollto offset-piksler
+
+? ) lazy-loading
+
+? ) pass på at rootPage funker etter implementasjon av lazy-loading
 
 ? ) logo på framsiden
 
@@ -26,6 +28,8 @@
 ? ) pwa popup
 
 ? ) button-press feedback
+
+x ) større skrift på list og søk for mobiler med store skjermer
 
 x ) bedre visning av tekst-innhold
 

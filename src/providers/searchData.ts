@@ -51,7 +51,7 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
             {
                 title: 'Symptomer', 
                 subtitle: "Smerte",        
-                searchTitle: ";Symptomer;Smerte;Smerte: Tiltak|4;Smerte: Medikamenter og behandling|2;Smerte: Grunnleggende kartlegging|3;Skjema;",        
+                searchTitle: ";Symptomer;Smerte;Smerte: Tiltak|3;Smerte: Medikamenter og behandling|2;Smerte: Grunnleggende kartlegging|1;Skjema|4;",        
                 component: "Symptomer1Page"},
             {
                 title: 'Symptomer', 
