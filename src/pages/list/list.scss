@@ -7,6 +7,13 @@ page-list {
         margin-top: 10px;
     }
 
+    .vertical-center{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
     @media screen and (min-height : 640px) {
     
         .label{

@@ -1,0 +1,23 @@
+page-den_siste_tiden5 {
+
+    ion-content .col{
+        border: 1px solid lightgray;
+        white-space: normal;
+    }
+
+    .col-header {
+        text-align: center;
+        background: lightslategray;
+    }
+
+    ion-content .grid {
+        width: 1100px;
+    }
+
+    ion-scroll {
+        white-space: nowrap;
+        height: 370px;
+    }
+
+
+}

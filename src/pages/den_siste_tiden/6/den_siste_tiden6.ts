@@ -9,7 +9,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class Den_siste_tiden6Page {
 
-   title: string = "Ernæring og væsketilføring"
+   title: string = "Når døden intreffer"
 
    constructor(public navCtrl: NavController,public navParams: NavParams) {
   }

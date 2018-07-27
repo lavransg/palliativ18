@@ -1,13 +1,102 @@
 <ion-header><header-bar [title]="title"></header-bar></ion-header>
 <ion-content>
-  <div class="page-content">
+    
+    <br>
+    <div class="content-paragraph">
+        Her legges algoritmene og oversikt over forslag til medikamenter /doseringer som er beregnet til livets siste dager. OBS Tillatelse fra HELSE VEST!!!!!
+        <br>Tabell 5: De mest aktuelle medikamentene til behandling av delirium 
+    </div>
 
-      <div class="content-paragraph">
-          Her legges algoritmene og oversikt over forslag til medikamenter /doseringer som er beregnet til livets siste dager. OBS Tillatelse fra HELSE VEST!!!!!
-          <br>Tabell 5: De mest aktuelle medikamentene til behandling av delirium 
-      </div>
 
-  </div>
-  
+    <ion-scroll scrollX="true">
+    <ion-grid>
+        
+        <!-- row 1-->
+        <ion-row>
+            <ion-col col-2 class="col-header" >medikament</ion-col>
+            <ion-col col-1 class="col-header" >Evidens-<br>nivå</ion-col>
+            <ion-col col-2 class="col-header" >Indikasjon</ion-col>
+            <ion-col col-2 class="col-header" >Døgndose <br>(peroral)</ion-col>
+            <ion-col col-2 class="col-header" >Kontraindikasjoner</ion-col>
+            <ion-col col-2 class="col-header" >bivirkninger</ion-col>
+        </ion-row>
+
+        <!-- row 2-->		
+        <ion-row>
+            <ion-col col-2 >Haloperidol</ion-col>
+            <ion-col col-1 >A-B</ion-col>
+            <ion-col col-2 >Delirium</ion-col>
+            <ion-col col-2 >0,8-28 mg</ion-col>
+            <ion-col col-2 >Forlenget QT-tid</ion-col>
+            <ion-col col-2 >Ekstrapyramidale</ion-col>
+        </ion-row>
+
+        <!-- row 3-->		
+        <ion-row>
+            <ion-col col-2 >Risperidone</ion-col>
+            <ion-col col-1 >B</ion-col>
+            <ion-col col-2 >Delirium</ion-col>
+            <ion-col col-2 >0,5-2 mg</ion-col>
+            <ion-col col-2 >Kardiovaskulær lidelse / økt risiko for slik lidelse</ion-col>
+            <ion-col col-2 >Kardiovaskulære hendelser</ion-col>
+        </ion-row>
+
+        <!-- row 4-->		
+        <ion-row>
+            <ion-col col-2 >Olanzapine</ion-col>
+            <ion-col col-1 >B</ion-col>
+            <ion-col col-2 >Delirium</ion-col>
+            <ion-col col-2 >2,5-13,5 mg</ion-col>
+            <ion-col col-2 >Kardiovaskulær lidelse / økt risiko for slik lidelse</ion-col>
+            <ion-col col-2 >Kardiovaskulære hendelser</ion-col>
+        </ion-row>
+
+        <!-- row 5-->				
+        <ion-row>
+            <ion-col col-2 >Klorpromazine</ion-col>
+            <ion-col col-1 >B</ion-col>
+            <ion-col col-2 >Delirium</ion-col>
+            <ion-col col-2 >10-70 mg</ion-col>
+            <ion-col col-2 >Nedsatt bevissthet grunnet intoksikasjon</ion-col>
+            <ion-col col-2 >Ekstrapyramidale, sedasjon, blodtrykksfall</ion-col>
+        </ion-row>
+
+        <!-- row 6-->	 		
+        <ion-row>
+            <ion-col col-2 >Midazolam</ion-col>
+            <ion-col col-1 >B</ion-col>
+            <ion-col col-2 >Uro, agitasjon</ion-col>
+            <ion-col col-2 >10-30 mg (iv) (2)</ion-col>
+            <ion-col col-2 >Kjent overfølsomhet</ion-col>
+            <ion-col col-2 >Respirasjons-depresjon</ion-col>
+        </ion-row>
+
+        <!-- row 7-->		
+        <ion-row>
+            <ion-col col-2 >Clomethiazol</ion-col>
+            <ion-col col-1 >C</ion-col>
+            <ion-col col-2 >Uro, agitasjon</ion-col>
+            <ion-col col-2 >300 mg x 3-4 /<br> 600 mg vesp	</ion-col>
+            <ion-col col-2 >Svekket lungefunksjon</ion-col>
+            <ion-col col-2 >Blodtrykksfall, forstyrret respirasjon</ion-col>
+        </ion-row>
+
+        <!-- row 8-->
+        <ion-row>
+            <ion-col col-2 >Lorazepam(1)</ion-col>
+            <ion-col col-1 >B</ion-col>
+            <ion-col col-2 >Uro, agitasjon</ion-col>
+            <ion-col col-2 >0,5-10 mg</ion-col>
+            <ion-col col-2 >?</ion-col>
+            <ion-col col-2 >?</ion-col>
+        </ion-row>
+        
+    </ion-grid>
+    </ion-scroll>
+
+    1 benzodiazepin, ikke registrert i Norge
+   <br> 2  brukes for å indusere søvn der annen behandling har mislykkes
+
+
 </ion-content>
 

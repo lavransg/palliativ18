@@ -23,10 +23,10 @@ export class ListPage {
   denSisteTiden: any[] = [
     {title: 'Tegn på at X er døende',                   component: "Den_siste_tiden1Page"},
     {title: 'Det gode stellet',                         component: "Den_siste_tiden2Page"},
-    {title: 'Ikke-medikamentell behandling',            component: "Den_siste_tiden3Page"},
-    {title: 'Når døden intreffer',                      component: "Den_siste_tiden4Page"},
+    {title: 'Ernæring og væsketilførsel',               component: "Den_siste_tiden3Page"},
+    {title: 'Ikke-medikamentell behandling',            component: "Den_siste_tiden4Page"},
     {title: 'Medikamentskrinet / lindring av symptomer',component: "Den_siste_tiden5Page"},
-    {title: 'Ernering og væsketilførsel',               component: "Den_siste_tiden6Page"},
+    {title: 'Når døden intreffer',                      component: "Den_siste_tiden6Page"},
   ]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

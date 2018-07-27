@@ -9,7 +9,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class Den_siste_tiden3Page {
 
-   title: string = "Ikke-medikamentell behandling"
+   title: string = "Ernærnig og væsketilførsel"
 
    constructor(public navCtrl: NavController,public navParams: NavParams) {
   }

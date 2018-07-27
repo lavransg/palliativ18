@@ -11,6 +11,10 @@
 
 ) gå over scrollto-IDene
 
+) være konsekvent ved bruk av <br> eller class="content-paragraph"
+
+) lag popover med tabeller for medikamentskrinet i den siste tiden
+
 ? ) tweake scrollto offset-piksler
 
 ? ) lazy-loading

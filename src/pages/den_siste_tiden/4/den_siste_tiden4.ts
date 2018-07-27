@@ -9,7 +9,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class Den_siste_tiden4Page {
 
-   title: string = "Når døden inntreffer"
+   title: string = "Ikke-medikamentell behandling"
 
    constructor(public navCtrl: NavController,public navParams: NavParams) {
   }
