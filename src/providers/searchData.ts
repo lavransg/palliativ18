@@ -31,6 +31,8 @@ export class SearchData {
  
     constructor() {
  
+        // this array is used for matching search-terms with pages.
+        // in "searchTitle", the terms are separated with ";" and the number after "|" denotes the element id for scrollTo purposes
         this.items = [
             {
                 title: 'Akutte tilstander', 
@@ -40,7 +42,8 @@ Blære-/tarmdysfunksjon;Brått oppståtte endringer i funksjonsnivå (f.eks. tap
 Økt trykk fra hjernemetastaser;Endret bevissthet/stemningsleie;Akutt svimmelhet;Kramper;\
 Synkope (kortvarig bevissthetstap med fullstendig oppvåkning);Hjertearytmier;Vektøkning/ødemer;Tungpustet;\
 Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;Blødninger;Tumorlysesyndrom;Hyperkalsemi;Delirium;", 
-                component: "Akutte_tilstanderPage"},
+                component: "Akutte_tilstanderPage"
+            },
             {title: 'Innhold / bakgrunn',searchTitle: ";Innhold / bakgrunn;Bakgrunn|2;Innledning|1;",component: "Innhold_bakgrunnPage"},
             {title: 'Kartlegging',       searchTitle: ";Kartlegging;",       component: "KartleggingPage"},
             {title: 'Kommunikasjon',     searchTitle: ";Kommunikasjon;Forberedende samtale om livets sluttfase|1;Samtale med pårørende|2;",     component: "KommunikasjonPage"},

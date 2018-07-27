@@ -1,8 +1,4 @@
 
-
-
-) en enkelt page-komponent med ngif for html templates
-
 ) fikse frysing ved scrolling på bunnen av sider
 
 ) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? FIKS når_døden_intreffer, sidene er i feil komponent
@@ -15,7 +11,7 @@
 
 ) gå over scrollto-IDene
 
-) tweake scrollto offset-piksler
+? ) tweake scrollto offset-piksler
 
 ? ) lazy-loading
 
@@ -23,11 +19,11 @@
 
 ? ) logo på framsiden
 
-? ) app-ikon
-
 ? ) pwa popup
 
 ? ) button-press feedback
+
+x ) app-ikon
 
 x ) større skrift på list og søk for mobiler med store skjermer
 
