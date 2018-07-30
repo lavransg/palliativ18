@@ -11,7 +11,7 @@ export class Aandelig_omsorgPage {
 
   title: string = "Åndelig omsorg"
 
-  constructor(public navCtrl: NavController,public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   
   @ViewChild(Content) content: Content;
@@ -23,17 +23,17 @@ export class Aandelig_omsorgPage {
     }
   }
 
-  scrollTo(element:string) {
+  scrollTo(element) {
     let elem = document.getElementById(element);
     if (elem){
-      var box = elem.getBoundingClientRect();
-      var body = document.body;
-      var docEl = document.documentElement;
-      var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
-      var clientTop = docEl.clientTop || body.clientTop || 0;
-      var top  = box.top +  scrollTop - clientTop;
-      var cDim = this.content.getContentDimensions();
-      var scrollOffset = Math.round(top) + cDim.scrollTop - cDim.contentTop;
+      let box = elem.getBoundingClientRect();
+      let body = document.body;
+      let docEl = document.documentElement;
+      let scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
+      let clientTop = docEl.clientTop || body.clientTop || 0;
+      let top  = box.top +  scrollTop - clientTop;
+      let cDim = this.content.getContentDimensions();
+      let scrollOffset = Math.round(top) + cDim.scrollTop - cDim.contentTop;
       this.content.scrollTo(0, scrollOffset-30, 500);
     }
   }

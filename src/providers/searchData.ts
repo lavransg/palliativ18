@@ -1,28 +1,4 @@
 import { Injectable } from '@angular/core';
-import 'rxjs/add/operator/map';
-
-/* import { Symptomer1Page } from '../pages/symptomer/1/symptomer1';
-import { Symptomer2Page } from '../pages/symptomer/2/symptomer2';
-import { Symptomer3Page } from '../pages/symptomer/3/symptomer3';
-import { Symptomer4Page } from '../pages/symptomer/4/symptomer4';
-import { Symptomer5Page } from '../pages/symptomer/5/symptomer5';
-import { Symptomer6Page } from '../pages/symptomer/6/symptomer6';
-import { Symptomer7Page } from '../pages/symptomer/7/symptomer7';
-import { Symptomer8Page } from '../pages/symptomer/8/symptomer8';
-
-import { Den_siste_tiden1Page } from '../pages/den_siste_tiden/1/den_siste_tiden1';
-import { Den_siste_tiden2Page } from '../pages/den_siste_tiden/2/den_siste_tiden2';
-import { Den_siste_tiden3Page } from '../pages/den_siste_tiden/3/den_siste_tiden3';
-import { Den_siste_tiden4Page } from '../pages/den_siste_tiden/4/den_siste_tiden4';
-import { Den_siste_tiden5Page } from '../pages/den_siste_tiden/5/den_siste_tiden5';
-import { Den_siste_tiden6Page } from '../pages/den_siste_tiden/6/den_siste_tiden6';
-
-import { Akutte_tilstanderPage } from '../pages/akutte_tilstander/akutte_tilstander';
-import { Innhold_bakgrunnPage } from '../pages/innhold_bakgrunn/innhold_bakgrunn';
-import { KartleggingPage } from '../pages/kartlegging/kartlegging';
-import { KommunikasjonPage } from '../pages/kommunikasjon/kommunikasjon';
-import { ProsedyrerPage } from '../pages/prosedyrer/prosedyrer';
-import { Aandelig_omsorgPage } from '../pages/aandelig_omsorg/aandelig_omsorg'; */
  
 @Injectable()
 export class SearchData {

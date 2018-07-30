@@ -1,13 +1,7 @@
 
-) fikse frysing ved scrolling på bunnen av sider
-
 ) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? FIKS når_døden_intreffer, sidene er i feil komponent
 
-) forbedre ikoner?
-
 ) husk å fjerne service-worker osv når appen bygges til produksjon
-
-) fiks scrollTo for komponenter som allerede er besøkt?
 
 ) gå over scrollto-IDene
 
@@ -17,15 +11,21 @@
 
 ? ) tweake scrollto offset-piksler
 
-? ) lazy-loading
-
-? ) pass på at rootPage funker etter implementasjon av lazy-loading
-
 ? ) logo på framsiden
 
 ? ) pwa popup
 
+? ) fikse frysing ved scrolling på bunnen av sider
+
 ? ) button-press feedback
+
+x ) forbedre ikoner?
+
+x ) lazy-loading
+
+x ) pass på at rootPage funker etter implementasjon av lazy-loading
+
+x ) fiks scrollTo for komponenter som allerede er besøkt?
 
 x ) app-ikon
 
