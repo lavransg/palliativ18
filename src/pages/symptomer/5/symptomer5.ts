@@ -20,7 +20,7 @@ export class Symptomer5Page {
   ionViewDidEnter(){ 
     let id = this.navParams.get('id')
     if (id && id != -1){
-      this.scrollTo("element"+id)
+      this.scrollTo("symptomer-5-"+id)
     }
   }
 

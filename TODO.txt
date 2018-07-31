@@ -1,5 +1,5 @@
 
-) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? FIKS når_døden_intreffer, sidene er i feil komponent
+) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? 
 
 ) husk å fjerne service-worker osv når appen bygges til produksjon
 
@@ -18,6 +18,8 @@
 ? ) fikse frysing ved scrolling på bunnen av sider
 
 ? ) button-press feedback
+
+x ) FIKS når_døden_intreffer, sidene er i feil komponent
 
 x ) forbedre ikoner?
 
@@ -43,3 +45,28 @@ x ) status-bar hvit bakgrunn
 
 x ) vertikalt sentrer pil i søk
 
+manglende innhold:
+
+x- link til tabell i symptomer4
+
+- link til ileus i symptomer6
+
+- link i smptomer8 x2
+
+- link i denSisteTiden2
+
+- link i denSisteTiden3
+
+- tabell osv. i denSisteTiden5
+
+- link i densistetiden6 +  etterspør eventuellt barn og unge
+
+- link i prosedyrer
+
+- KARTLEGGING
+
+
+++ søketermer for kartlegging og den andre, ileus?
+
+++ id-ene er globale og derfor fungerer ikke scroll-to. yay me
+(må fortsatt fikse søking på samme side man er på)

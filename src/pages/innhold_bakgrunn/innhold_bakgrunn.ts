@@ -18,7 +18,7 @@ export class Innhold_bakgrunnPage {
   ionViewDidEnter(){ 
     let id = this.navParams.get('id')
     if (id && id != -1){
-      this.scrollTo("element"+id)
+      this.scrollTo("innhold-"+id)
     }
   }
 

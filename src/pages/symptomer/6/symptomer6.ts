@@ -20,8 +20,12 @@ export class Symptomer6Page {
   ionViewDidEnter(){ 
     let id = this.navParams.get('id')
     if (id && id != -1){
-      this.scrollTo("element"+id)
+      this.scrollTo("symptomer-6-"+id)
     }
+  }
+
+  goToPage(page,id){
+    this.navCtrl.push(page, {id: id})
   }
 
   scrollTo(element:string) {

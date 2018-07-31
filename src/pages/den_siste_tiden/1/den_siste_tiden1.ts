@@ -9,7 +9,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class Den_siste_tiden1Page {
 
-   title: string = "Tegn på at X er døende"
+   title: string = "Tegn på at pasienten er døende"
 
    constructor(public navCtrl: NavController,public navParams: NavParams) {
   }
@@ -20,7 +20,7 @@ export class Den_siste_tiden1Page {
   ionViewDidEnter(){ 
     let id = this.navParams.get('id')
     if (id && id != -1){
-      this.scrollTo("element"+id)
+      this.scrollTo("den-siste-tiden-1-"+id)
     }
   }
 

@@ -19,7 +19,7 @@ export class Aandelig_omsorgPage {
   ionViewDidEnter(){ 
     let id = this.navParams.get('id')
     if (id && id != -1){
-      this.scrollTo("element"+id)
+      this.scrollTo("aandelig-omsorg-"+id)
     }
   }
 

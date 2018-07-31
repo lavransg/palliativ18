@@ -9,9 +9,9 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class Symptomer4Page {
 
-   title: string = "Delir"
+  title: string = "Delir"
 
-   constructor(public navCtrl: NavController,public navParams: NavParams) {
+  constructor(public navCtrl: NavController,public navParams: NavParams) {
   }
 
   
@@ -20,8 +20,12 @@ export class Symptomer4Page {
   ionViewDidEnter(){ 
     let id = this.navParams.get('id')
     if (id && id != -1){
-      this.scrollTo("element"+id)
+      this.scrollTo("symptomer-4-"+id)
     }
+  }
+
+  goToPage(page,id){
+    this.navCtrl.push(page, {id: id})
   }
 
   scrollTo(element:string) {

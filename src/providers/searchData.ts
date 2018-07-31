@@ -71,7 +71,7 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
                 //den siste tiden
             {
                 title: "Den siste tiden",
-                subtitle: "Tegn på at X er døende",      
+                subtitle: "Tegn på at pasienten er døende",      
                 searchTitle: ";Den siste tiden;Tegn på at Pasienten er døende|1;Terminalfasen|2;",        
                 component: "Den_siste_tiden1Page"
             },

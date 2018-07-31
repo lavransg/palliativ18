@@ -21,7 +21,7 @@ export class ListPage {
     {title: "Tungpust",   component: "Symptomer8Page"},
   ]
   denSisteTiden: any[] = [
-    {title: 'Tegn på at X er døende',                   component: "Den_siste_tiden1Page"},
+    {title: 'Tegn på at pasienten er døende',           component: "Den_siste_tiden1Page"},
     {title: 'Det gode stellet',                         component: "Den_siste_tiden2Page"},
     {title: 'Ernæring og væsketilførsel',               component: "Den_siste_tiden3Page"},
     {title: 'Ikke-medikamentell behandling',            component: "Den_siste_tiden4Page"},
