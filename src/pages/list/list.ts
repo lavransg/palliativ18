@@ -30,6 +30,7 @@ export class ListPage {
   ]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
     this.title = navParams.get("title")
     let pagesInput = navParams.get("pages")
     if ( pagesInput == "symptomer") {

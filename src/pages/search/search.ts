@@ -16,7 +16,7 @@ export class SearchPage {
   constructor(public navCtrl: NavController, public searchData: SearchData) {}
 
   onInput(){
-    if (this.searchbarInput == ""){ this.results = []; }
+    if (this.searchbarInput == ""){ this.results = [] }
     else {
       this.results = this.searchData.filterItems(this.searchbarInput);
       
@@ -27,17 +27,29 @@ export class SearchPage {
   }
 
   onCancel(){
-    this.searchbarInput = "";
-    this.results = [];
+    this.searchbarInput = ""
+    this.results = []
   }
 
   exitButtonClicked() {
-    this.navCtrl.pop();
+    this.navCtrl.pop()
   }
 
   goToPage(page,id){
-    this.navCtrl.push(page, {id: id})
-    this.navCtrl.remove(1);
+    // if the page we are navigating to allready exists in the stack, 
+    // we remove it to not make duplicates in the stack and cause the scrollTo to find the wrong element id
+    for ( let i=0; i < this.navCtrl.length(); i++ ) {
+      let view = this.navCtrl.getViews()[i];
+      if ( view.component.name == page ){
+        this.navCtrl.remove(i)
+      }
+    }
+
+    // finally, push the page and remove the searcPage from the stack as we do not want it in the history
+    this.navCtrl.push(page, {id: id}).then(() => {
+      this.navCtrl.remove(this.navCtrl.getPrevious().index)
+    })
+    
   }
 
 

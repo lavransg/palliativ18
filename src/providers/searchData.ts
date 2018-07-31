@@ -112,27 +112,31 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
         let results = []
         for (let i = 0; i < this.items.length; i++){
             let item = this.items[i]
-            let index = item.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase())
+            let index = item.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase()) // index of first found searchTerm
             
             while ( index != -1){
                 
-                let itemCopy = Object.assign({},this.items[i])
-                let endIndex = itemCopy.searchTitle.indexOf(';', index);
+                let itemCopy = Object.assign({},this.items[i]) // make a copy to not edit the actual searchable items
+                let endIndex = itemCopy.searchTitle.indexOf(';', index); // find the indexes (indices?) of ";" to the left and right of the found term
                 let startIndex = itemCopy.searchTitle.lastIndexOf(';', index - 1)
-                let preview = itemCopy.searchTitle.slice(startIndex + 1,endIndex)
-                let id = this.findId(preview)
-                if (id != -1 ) { preview = preview.slice(0, -2)}
+                let preview = itemCopy.searchTitle.slice(startIndex + 1,endIndex) // set the preview to be everything between the ";"
+                let id = this.findId(preview) // check for the "|id" for purposes of scrolling to the found element
+                if (id != -1 ) { preview = preview.slice(0, -2)} // remove the "|id"
                 itemCopy.id = id
 
-
                 if (preview == itemCopy.title){
+                    // if the prewiev is the title of the page, has a subtitle, and the subtitle does not contain the search term,
+                    // we guve the prewiev the subtitle
                     if ( itemCopy.subtitle && itemCopy.subtitle.toLowerCase().indexOf(searchTerm.toLowerCase()) == -1 ){ 
                         itemCopy.preview = itemCopy.subtitle
                     }
+                    // otherwise, the page has no subtitle ( it is a main page)
                     else { itemCopy.preview = ""}  
                 }
+                // other-otherwise, the prewiev is the name of the page subsection
                 else { itemCopy.preview = preview }
 
+                // look for the next searchTerm match after the following ";"
                 let nextIndex = itemCopy.searchTitle.indexOf(';', index);
                 index = nextIndex > -1 ? itemCopy.searchTitle.toLowerCase().indexOf(searchTerm.toLowerCase(),nextIndex +1) : -1
                 results.push(itemCopy)

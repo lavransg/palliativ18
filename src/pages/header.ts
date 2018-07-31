@@ -33,7 +33,8 @@ export class HeaderBar {
   }
 
   backButtonClicked(){
-    if ( this.navCtrl.length() < 2 ) { this.navCtrl.push("HomePage") }
+    // if this is the only page (by directly linking in a browser) set the homePage as root
+    if ( this.navCtrl.length() < 2 ) { this.navCtrl.setRoot("HomePage") } 
     else { this.navCtrl.pop() }
   }
 
@@ -42,6 +43,6 @@ export class HeaderBar {
   }
 
   searchButtonClicked(){
-    this.navCtrl.push(SearchPage,{animate: true, direction: "down"})
+    this.navCtrl.push(SearchPage)
   }
 }

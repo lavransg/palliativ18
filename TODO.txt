@@ -66,7 +66,7 @@ x- link til tabell i symptomer4
 - KARTLEGGING
 
 
-++ søketermer for kartlegging og den andre, ileus?
+++ søketermer for kartlegging og prosedyrer
 
 ++ id-ene er globale og derfor fungerer ikke scroll-to. yay me
 (må fortsatt fikse søking på samme side man er på)
