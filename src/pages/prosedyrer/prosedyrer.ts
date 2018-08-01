@@ -37,7 +37,7 @@ export class ProsedyrerPage {
       let top  = box.top +  scrollTop - clientTop;
       let cDim = this.content.getContentDimensions();
       let scrollOffset = Math.round(top) + cDim.scrollTop - cDim.contentTop;
-      this.content.scrollTo(0, scrollOffset-30, 500);
+      this.content.scrollTo(0, scrollOffset-35, 500);
     }
   }
 

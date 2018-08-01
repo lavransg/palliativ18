@@ -9,11 +9,10 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class Symptomer1Page {
 
-   title: string = "Smerte"
+  title: string = "Smerte"
 
-   constructor(public navCtrl: NavController,public navParams: NavParams) {
+  constructor(public navCtrl: NavController,public navParams: NavParams) {
   }
-
   
   @ViewChild(Content) content: Content;
 
@@ -26,9 +25,7 @@ export class Symptomer1Page {
 
   scrollTo(element:string) {
     let elem = document.getElementById(element);
-    console.log(elem)
     if (elem){
-      
       let body = document.body;
       let docEl = document.documentElement;
       let scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
@@ -36,11 +33,8 @@ export class Symptomer1Page {
       let box = elem.getBoundingClientRect();
       let top  = box.top +  scrollTop - clientTop;
       let cDim = this.content.getContentDimensions();
-      console.log("cdim: ",cDim, " box: ", box)
       let scrollOffset = Math.round(top) + cDim.scrollTop - cDim.contentTop;
-      this.content.scrollTo(0, scrollOffset-30, 500);
-      console.log('scrollto: ' ,scrollOffset);
-      
+      this.content.scrollTo(0, scrollOffset-35, 500);
     }
   }
 

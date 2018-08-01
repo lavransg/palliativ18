@@ -35,7 +35,7 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
             {
                 title: 'Symptomer', 
                 subtitle: "Kvalme",        
-                searchTitle: ";Symptomer;Kvalme|1;Kvalme: Tiltak|4;Kvalme: Medikamenter og behandling|2;Kvalme: Grunnleggende kartlegging|3;",        
+                searchTitle: ";Symptomer;Kvalme;Kvalme: Tiltak|4;Kvalme: Medikamenter og behandling|2;Kvalme: Grunnleggende kartlegging|3;",        
                 component: "Symptomer2Page"},
             {
                 title: 'Symptomer', 
@@ -45,7 +45,7 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
             {
                 title: 'Symptomer', 
                 subtitle: "Delir",         
-                searchTitle: ";Symptomer;Delir|1;Delir: Tiltak|4;Delir: Medikamenter og behandling|3;Delir: Grunnleggende kartlegging|2;",         
+                searchTitle: ";Symptomer;Delir;Delir: Tiltak|4;Delir: Medikamenter og behandling|3;Delir: Grunnleggende kartlegging|2;",         
                 component: "Symptomer4Page"},
             {
                 title: 'Symptomer', 

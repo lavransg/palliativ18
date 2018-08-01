@@ -3,21 +3,21 @@
 
 ) husk å fjerne service-worker osv når appen bygges til produksjon
 
-) gå over scrollto-IDene
+? ) være konsekvent ved bruk av <br> eller class="content-paragraph"
 
-) være konsekvent ved bruk av <br> eller class="content-paragraph"
-
-) lag popover med tabeller for medikamentskrinet i den siste tiden
-
-? ) tweake scrollto offset-piksler
+? ) lag popover med tabeller for medikamentskrinet i den siste tiden
 
 ? ) logo på framsiden
 
 ? ) pwa popup
 
-? ) fikse frysing ved scrolling på bunnen av sider
+? ) fikse frysing ved scrolling på bunnen av sider for pwa
 
 ? ) button-press feedback
+
+x ) tweake scrollto offset-piksler
+
+x ) gå over scrollto-IDene
 
 x ) FIKS når_døden_intreffer, sidene er i feil komponent
 
@@ -65,8 +65,3 @@ x- link i prosedyrer
 
 - KARTLEGGING
 
-
-++ søketermer for kartlegging og prosedyrer
-
-++ id-ene er globale og derfor fungerer ikke scroll-to. yay me
-(må fortsatt fikse søking på samme side man er på)
