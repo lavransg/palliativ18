@@ -24,6 +24,10 @@ export class Symptomer8Page {
     }
   }
 
+  goToPage(page,id){
+    this.navCtrl.push(page, {id: id})
+  }
+
   scrollTo(element:string) {
     let elem = document.getElementById(element);
     if (elem){

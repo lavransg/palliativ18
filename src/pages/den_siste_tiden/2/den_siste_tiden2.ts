@@ -9,20 +9,22 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class Den_siste_tiden2Page {
 
-   title: string = "Det gode stellet"
+  title: string = "Det gode stellet"
 
-   constructor(public navCtrl: NavController,public navParams: NavParams) {
+  constructor(public navCtrl: NavController,public navParams: NavParams) {
   }
-
   
   @ViewChild(Content) content: Content;
 
   ionViewDidEnter(){ 
-    console.log("ionViewDidEnter")
     let id = this.navParams.get('id')
     if (id && id != -1){
       this.scrollTo("den-siste-tiden-2-"+id)
     }
+  }
+
+  goToPage(page,id){
+    this.navCtrl.push(page, {id: id})
   }
 
   scrollTo(element:string) {
@@ -36,7 +38,7 @@ export class Den_siste_tiden2Page {
       var top  = box.top +  scrollTop - clientTop;
       var cDim = this.content.getContentDimensions();
       var scrollOffset = Math.round(top) + cDim.scrollTop - cDim.contentTop;
-      this.content.scrollTo(0, scrollOffset - 70, 500);
+      this.content.scrollTo(0, scrollOffset - 30, 500);
     }
   }
 

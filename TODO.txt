@@ -49,19 +49,19 @@ manglende innhold:
 
 x- link til tabell i symptomer4
 
-- link til ileus i symptomer6
+x- link til ileus i symptomer6
 
-- link i smptomer8 x2
+x- link i symptomer8 x2
 
-- link i denSisteTiden2
+x- link i denSisteTiden2
 
-- link i denSisteTiden3
+x- link i denSisteTiden3
 
 - tabell osv. i denSisteTiden5
 
-- link i densistetiden6 +  etterspør eventuellt barn og unge
+x- link i densistetiden6(når døden intreffer) +  etterspør eventuellt barn og unge (det er ikke etterlattesamtale i kommunikasjon) 
 
-- link i prosedyrer
+x- link i prosedyrer
 
 - KARTLEGGING
 

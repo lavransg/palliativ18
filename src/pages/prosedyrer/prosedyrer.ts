@@ -8,8 +8,8 @@ import { NavController, IonicPage, Content, NavParams } from 'ionic-angular';
 })
 export class ProsedyrerPage {
 
-   title: string = "Prosedyrer"
-   @ViewChild(Content) content: Content;
+  title: string = "Prosedyrer"
+  @ViewChild(Content) content: Content;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
@@ -20,6 +20,10 @@ export class ProsedyrerPage {
     if (id && id != -1){
       this.scrollTo("prosedyrer-"+id)
     }
+  }
+
+  goToPage(page,id){
+    this.navCtrl.push(page, {id: id})
   }
 
   scrollTo(element:string) {

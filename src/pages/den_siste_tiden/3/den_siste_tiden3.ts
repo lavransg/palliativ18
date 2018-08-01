@@ -13,7 +13,6 @@ export class Den_siste_tiden3Page {
 
    constructor(public navCtrl: NavController,public navParams: NavParams) {
   }
-
   
   @ViewChild(Content) content: Content;
 
@@ -22,6 +21,10 @@ export class Den_siste_tiden3Page {
     if (id && id != -1){
       this.scrollTo("element"+id)
     }
+  }
+
+  goToPage(page,id){
+    this.navCtrl.push(page, {id: id})
   }
 
   scrollTo(element:string) {

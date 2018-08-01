@@ -5,6 +5,19 @@ page-den_siste_tiden5 {
         white-space: normal;
     }
 
+    .header-fixed{
+        font-size: 2rem;
+    }
+
+    .content-paragraph{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .menu-header{
+        font-size: 2rem;
+    }
+
     .col-header {
         text-align: center;
         background: lightslategray;
@@ -16,7 +29,7 @@ page-den_siste_tiden5 {
 
     ion-scroll {
         white-space: nowrap;
-        height: 370px;
+        height: 365px;
     }
 
 
