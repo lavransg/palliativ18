@@ -3,6 +3,8 @@
 
 ) husk å fjerne service-worker osv når appen bygges til produksjon
 
+) sett fokus på input-feltet på søkesiden
+
 ? ) være konsekvent ved bruk av <br> eller class="content-paragraph"
 
 ? ) lag popover med tabeller for medikamentskrinet i den siste tiden

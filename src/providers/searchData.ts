@@ -84,13 +84,13 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
                 title: "Den siste tiden",
                 subtitle: "Ikke-medikamentell behandling",
                 searchTitle: ";Den siste tiden;Ikke-medikamentell behandling|1;Massasje|2;Temperatur|3;Musikk|4;Avledning|5;Tankereiser|6;",        
-                component: "Den_siste_tiden3Page"
+                component: "Den_siste_tiden4Page"
             },
             {
                 title: "Den siste tiden",
                 subtitle: "Når døden inntreffer",          
                 searchTitle: ";Den siste tiden;Når døden inntreffer|1;Når døden inntreffer: Tiltak|2;",       
-                component: "Den_siste_tiden4Page"
+                component: "Den_siste_tiden6Page"
             },
             {
                 title: "Den siste tiden",
@@ -102,7 +102,7 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
                 title: "Den siste tiden",
                 subtitle: "Ernering og væsketilførsel",   
                 searchTitle: ";Den siste tiden;Ernering og væsketilførsel;",        
-                component: "Den_siste_tiden6Page"
+                component: "Den_siste_tiden3Page"
             },
         ]
  
