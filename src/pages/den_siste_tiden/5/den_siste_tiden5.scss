@@ -1,7 +1,7 @@
 page-den_siste_tiden5 {
 
     ion-content .col{
-        border: 1px solid lightgray;
+        border: 1px solid white;
         white-space: normal;
     }
 
@@ -20,7 +20,7 @@ page-den_siste_tiden5 {
 
     .col-header {
         text-align: center;
-        background: lightslategray;
+        background: rgb(187, 187, 187);
     }
 
     ion-content .grid {
@@ -29,7 +29,7 @@ page-den_siste_tiden5 {
 
     ion-scroll {
         white-space: nowrap;
-        height: 365px;
+        height: 370px;
     }
 
 
