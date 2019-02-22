@@ -8,7 +8,7 @@ page-konverteringstabell{
         //transform: rotate(90deg);
         
         max-width: none;
-        height: calc(100vh - 107px);
+        height: calc(100vh - 80px);
         //width: auto;
         z-index: 200;
     }
@@ -16,7 +16,28 @@ page-konverteringstabell{
         height:100% !important
     }
     .scroll-content{
-        padding:0
+        padding: 0
+    }
+
+    .header-shadow{
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-box-shadow: 0 0 0 0 transparent;
+        -moz-box-shadow: 0 0 0 0 transparent;
+    }
+    
+    @media screen and (max-height : 640px) {
+        .header-row{
+            margin: 0;
+        }
+        #konverteringstabell{
+            height: calc(100vh - 80px);
+        }
+        .header{
+            height: 80px;
+        }
+        .scroll-content{
+            //margin-top: 80px !important;
+        }
     }
 
 }
