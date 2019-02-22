@@ -21,9 +21,9 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
                 component: "Akutte_tilstanderPage"
             },
             {title: 'Innhold / bakgrunn',searchTitle: ";Innhold / bakgrunn;Bakgrunn|2;Innledning|1;",component: "Innhold_bakgrunnPage"},
-            {title: 'Kartlegging',       searchTitle: ";Kartlegging;",       component: "KartleggingPage"},
-            {title: 'Kommunikasjon',     searchTitle: ";Kommunikasjon;Forberedende samtale om livets sluttfase|1;Samtale med pårørende|2;",     component: "KommunikasjonPage"},
-            {title: 'Prosedyrer',        searchTitle: ";Prosedyrer;Subcutan kanyle|1;Ileus/Subileus|3;",        component: "ProsedyrerPage"},
+            /* {title: 'Kartlegging',       searchTitle: ";Kartlegging;",       component: "KartleggingPage"}, */
+            {title: 'Kommunikasjon',     searchTitle: ";Kommunikasjon;Forberedende samtale om livets sluttfase|1;Samtale med pårørende|2;Når barn og unge er pårørende|3;",     component: "KommunikasjonPage"},
+            /* {title: 'Prosedyrer',        searchTitle: ";Prosedyrer;Subcutan kanyle|1;Ileus/Subileus|3;",        component: "ProsedyrerPage"}, */
             {title: 'Åndelig omsorg',    searchTitle: ";Åndelig omsorg;Tiltak|2;",    component: "Aandelig_omsorgPage"},
 
             //Symptomer
@@ -49,8 +49,8 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
                 component: "Symptomer4Page"},
             {
                 title: 'Symptomer', 
-                subtitle: "Munntørr",      
-                searchTitle: ";Symptomer;Munntørr|1;Munntørr: Tiltak|4;Munntørr: Medikamenter og behandling|3;Munntørr: Grunnleggende kartlegging|2;",      
+                subtitle: "Munntørrhet",      
+                searchTitle: ";Symptomer;Munntørrhet|1;Munntørr: Tiltak|4;Munntørrhet: Medikamenter og behandling|3;Munntørrhet: Grunnleggende kartlegging|2;",      
                 component: "Symptomer5Page"},
             {
                 title: 'Symptomer', 

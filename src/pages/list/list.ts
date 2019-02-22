@@ -15,7 +15,7 @@ export class ListPage {
     {title: "Kvalme",     component: "Symptomer2Page"},
     {title: "Angst/uro",  component: "Symptomer3Page"},
     {title: "Delir",      component: "Symptomer4Page"},
-    {title: "Munntørr",   component: "Symptomer5Page"},
+    {title: "Munntørrhet",component: "Symptomer5Page"},
     {title: "Obstipasjon",component: "Symptomer6Page"},
     {title: "Matlyst",    component: "Symptomer7Page"},
     {title: "Tungpust",   component: "Symptomer8Page"},
