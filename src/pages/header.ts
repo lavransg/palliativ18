@@ -11,7 +11,7 @@ import { SearchPage } from './search/search';
   `
   <ion-row class="menu-header">
     <ion-col col-2></ion-col>
-    <ion-col col-8><b>{{title}}</b></ion-col>
+    <ion-col col-8 class="title"><b>{{title}}</b></ion-col>
     <ion-col col-2></ion-col>
   </ion-row>
 

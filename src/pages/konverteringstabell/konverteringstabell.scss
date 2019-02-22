@@ -1,0 +1,22 @@
+page-konverteringstabell{
+
+    .table-container{
+        width: 100%;
+        height: 100%;
+    }
+    #konverteringstabell{
+        //transform: rotate(90deg);
+        
+        max-width: none;
+        height: calc(100vh - 107px);
+        //width: auto;
+        z-index: 200;
+    }
+    .scroll{
+        height:100% !important
+    }
+    .scroll-content{
+        padding:0
+    }
+
+}

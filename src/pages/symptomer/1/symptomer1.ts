@@ -38,4 +38,8 @@ export class Symptomer1Page {
     }
   }
 
+  goToKonverteringstabell(){
+    this.navCtrl.push("KonverteringstabellPage")
+  }
+
 }

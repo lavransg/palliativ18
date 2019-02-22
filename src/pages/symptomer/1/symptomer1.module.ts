@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { Symptomer1Page } from "./symptomer1";
 import { HeaderBarModule } from "../../header.module";
+import { KonverteringstabellModule } from '../../konverteringstabell/konverteringstabell.module';
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { HeaderBarModule } from "../../header.module";
   imports: [   
     IonicPageModule.forChild(Symptomer1Page),
     HeaderBarModule,
+    KonverteringstabellModule
   ],
   exports: [Symptomer1Page]
 })
