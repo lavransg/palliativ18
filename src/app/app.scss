@@ -126,6 +126,7 @@ ul{
     }
 
     .header-shadow{
+        padding-bottom: 20px;
         box-shadow: 0 12px 35px 35px white;
         -webkit-box-shadow: 0 12px 35px 35px white;
         -moz-box-shadow: 0 12px 35px 35px white;
@@ -133,5 +134,6 @@ ul{
 
     .scroll-content{
         padding-top: 30px;
+        margin-top: 70px!important;
     }
 }
