@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="palliasjon.helseinnovasjonssenteret" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Palliasjon</name>
     <description>Håndbok for palliativ pleie</description>
-    <author email="lavrans.gronseth@gmail.com" href="http://ionicframework.com/">Lavrans Grønseth</author>
+    <author email="lavransgronseth@gmail.com" href="http://ionicframework.com/">Lavrans Grønseth</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -88,7 +88,6 @@
     <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
     <allow-navigation href="http://10.3.28.42:8100" />
     <allow-navigation href="http://10.3.28.37:8100" />
-    <allow-navigation href="http://192.168.56.1:8100" />
     <engine name="android" spec="7.0.0" />
     <engine name="ios" spec="4.5.4" />
 </widget>
