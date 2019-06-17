@@ -26,6 +26,8 @@ $searchbar-md-background-color: transparent;
 
 .body{
     //font-family: 'Varela Round', sans-serif;
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
 }
 .searchbar-ios{
     background: transparent;
@@ -41,7 +43,7 @@ $searchbar-md-background-color: transparent;
 }
 
 .scroll-content{
-    padding-top: 20px;
+    padding-top: 30px;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -71,7 +73,7 @@ $searchbar-md-background-color: transparent;
     padding-bottom: 65px;
     background-clip: content-box;
 
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     text-align: center;
     font-family: 'Varela Round', sans-serif;
 }
