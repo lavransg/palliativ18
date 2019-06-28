@@ -26,8 +26,8 @@ $searchbar-md-background-color: transparent;
 
 .body{
     //font-family: 'Varela Round', sans-serif;
-    padding-top: constant(safe-area-inset-top);
-    padding-top: env(safe-area-inset-top);
+    padding-top: constant(safe-area-inset-top) !important;
+    padding-top: env(safe-area-inset-top) !important;
 }
 .searchbar-ios{
     background: transparent;
@@ -43,7 +43,8 @@ $searchbar-md-background-color: transparent;
 }
 
 .scroll-content{
-    padding-top: 30px;
+    padding-top: calc(30px + env(safe-area-inset-top));
+    padding-top: calc(30px + constant(safe-area-inset-top)) ;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -63,6 +64,7 @@ $searchbar-md-background-color: transparent;
 
 
 .header-fixed{
+    
     z-index: 1;
     position: absolute;
     top: 0;
@@ -78,7 +80,10 @@ $searchbar-md-background-color: transparent;
     font-family: 'Varela Round', sans-serif;
 }
 
+
 .header-shadow{
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
     padding-bottom: 10px;
     z-index: 1;
     background-color: white;
@@ -123,7 +128,7 @@ ul{
     padding-left: 10px;
 }
 
-@media screen and (max-height : 640px) {
+@media screen and (max-height : 350px) {
     .header-fixed{
         font-size: 2rem;
     }
@@ -137,6 +142,6 @@ ul{
 
     .scroll-content{
         padding-top: 30px;
-        margin-top: 70px!important;
+        margin-top: 70px;
     }
 }

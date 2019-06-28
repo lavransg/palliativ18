@@ -3,9 +3,14 @@ page-konverteringstabell{
     .table-container{
         width: 100%;
         height: 100%;
+	
     }
+    .header-fixed{
+        font-size: 2.2rem;
+    }
+    
     #tabell-header{
-        font-size: 2.3rem;
+        font-size: 2.2rem !important;
     }
     #konverteringstabell{
         //transform: rotate(90deg);
@@ -15,6 +20,12 @@ page-konverteringstabell{
         //width: auto;
         z-index: 200;
         margin-top: 5px;
+	padding-top: constant(safe-area-inset-top);
+        padding-top: env(safe-area-inset-top);
+	padding-bottom: constant(safe-area-inset-bottom);
+        Padding-bottom: env(safe-area-inset-bottom);
+
+
     }
     .scroll{
         height:100% !important
@@ -29,18 +40,19 @@ page-konverteringstabell{
         -moz-box-shadow: 0 0 0 0 transparent;
     }
     
-    @media screen and (max-height : 640px) {
+    @media screen and (max-height : 1340px) {
         .header-row{
             margin: 0;
         }
         #konverteringstabell{
-            height: calc(100vh - 110px);
+            height: calc(100vh - 100px);
         }
         .header{
-            height: 80px;
+            height: 90px;
         }
         .scroll-content{
             //margin-top: 80px !important;
+	    padding-top: 0px;
         }
     }
 
