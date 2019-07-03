@@ -9,19 +9,21 @@ page-search{
     }
 
     .search-header{
+	    padding-top: calc(20px + constant(safe-area-inset-top));
+        padding-top: calc(20px + env(safe-area-inset-top));
         z-index: 10;
         background-clip: content-box;
         position: fixed;
         top: 0px;
         left: 0px;
-        height: 100px;
+        height: 130px;
         width: 100%;
         font-size: 3rem;
         text-align: center;
         font-family: 'Varela Round', sans-serif;
-        padding-top: 20px;
         background: white;
         box-shadow: 0 3px 35px 35px white;
+
     }
 
     .header-spacer{
@@ -51,6 +53,10 @@ page-search{
         .search-header{
             font-size: 2.5rem !important; 
             box-shadow: 0 3px 35px 35px white;
+	        height: 100px
+        }
+	    .scroll-content{
+            margin-top: 0px !important;
         }
     }
     
@@ -61,8 +67,9 @@ page-search{
         }
 
         .list{
-            margin-top: 120px;
+            margin-top: 140px;
         }
+
     }
 
 }
