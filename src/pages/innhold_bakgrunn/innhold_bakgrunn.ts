@@ -11,6 +11,26 @@ export class Innhold_bakgrunnPage {
 
   title: string = "Innhold / bakgrunn"
 
+  public checklist = [
+    { val: 'Sed ei autem aperiam probatus. An ridens suscipit theophrastus nam.', isChecked: false },
+    { val: 'Nec no tale comprehensam.', isChecked: false },
+    { val: 'Putent feugait prodesset ad est, no qui ullum elaboraret id.', isChecked: false },
+    { val: 'Ut latine detracto mei erant.', isChecked: false },
+    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
+    { val: 'Vim ullum explicari laboramus et.', isChecked: false },
+    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
+    { val: 'Sed te erat verear lobortis. Pro id quaeque adolescens voluptaria.', isChecked: false },
+    { val: 'Ut latine detracto mei erant.', isChecked: false },
+    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
+    { val: 'Nec no tale comprehensam.', isChecked: false },
+    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
+    { val: 'Sed te erat verear lobortis. Pro id quaeque adolescens voluptaria.', isChecked: false },
+    { val: 'Vim ullum explicari laboramus et.', isChecked: false },
+    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
+    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
+    { val: 'Ut latine detracto mei erant.', isChecked: false },
+  ];
+
   constructor(public navCtrl: NavController,public navParams: NavParams) {}
   
   @ViewChild(Content) content: Content;
@@ -19,6 +39,12 @@ export class Innhold_bakgrunnPage {
     let id = this.navParams.get('id')
     if (id && id != -1){
       this.scrollTo("innhold-"+id)
+    }
+  }
+
+  clearCheckboxes(){
+    for (let item in this.checklist) {
+      this.checklist[item].isChecked = false;
     }
   }
 

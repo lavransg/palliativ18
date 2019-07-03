@@ -1,7 +1,7 @@
 <ion-header><header-bar [title]="title"></header-bar></ion-header>
 <ion-content>
-  <div class="page-content">
-    <div class="content-header" id="innhold-1">Innledning</div>
+  <!-- <div class="page-content">
+     <div class="content-header" id="innhold-1">Innledning</div>
     <div class="content-paragraph" >
       Lindrende behandling eller palliasjon betyr aktiv behandling, pleie og omsorg for pasienter med uhelbredelig sykdom og kort forventet levetid. Målet er å gi best mulig livskvalitet til både pasienten og pårørende. 
       <br><br>Mye av modellen for behandling, pleie og omsorg er også anvendbar tidligere i sykdomsforløpet, samtidig som det gis kurativ eller livsforlengende behandling. Pasient og pårørende skal oppleve trygghet. Deres ønsker og behov skal stå i fokus. For å ivareta alvorlig syke pasienter og deres pårørende, kreves trygge og kvalifiserte fagpersoner.
@@ -20,7 +20,18 @@
     <div class="content-paragraph">
       Dette er ikke et nasjonalt oppslagsverk
     </div>
+  </div> -->
+  <div class="clear-button-container">
+    <button small round ion-button color="dark" outline (click)="this.clearCheckboxes()">clear</button>
+  </div>
+  <div class="checklist-container">
 
+    <ion-list>
+      <ion-item text-wrap no-lines *ngFor="let item of checklist">
+        <ion-label>{{item.val}}</ion-label>
+        <ion-checkbox color="dark" [(ngModel)]="item.isChecked"></ion-checkbox>
+      </ion-item> 
+    </ion-list>
   </div>
 
 </ion-content>
