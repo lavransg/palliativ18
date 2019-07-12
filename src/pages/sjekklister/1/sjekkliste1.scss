@@ -1,0 +1,22 @@
+page-sjekkliste1 {
+    .clear-button-container{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .checklist-container{
+        z-index: 1;
+        max-width: 700px;
+        min-height: calc(100% - 70px);
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 70px;
+        padding-top: 10px;
+        font-size: 1.6rem;
+        font-family: 'Varela Round', sans-serif;
+    }
+    .header-fixed{
+        height: auto;
+        padding-bottom: 0;
+    }
+}

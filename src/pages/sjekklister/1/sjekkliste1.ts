@@ -4,12 +4,12 @@ import { NavController, NavParams, IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-sjekkliste',
-  templateUrl: 'sjekkliste.html'
+  selector: 'page-sjekkliste1',
+  templateUrl: 'sjekkliste1.html'
 })
-export class SjekklistePage {
+export class Sjekkliste1Page {
 
-  title: string = "Sjekkliste"
+  title: string = "Før pasienten kommer hjem"
 
   public checklist = [
     { val: 'Sed ei autem aperiam probatus. An ridens suscipit theophrastus nam.', isChecked: false },

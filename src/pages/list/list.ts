@@ -10,6 +10,12 @@ export class ListPage {
 
   pages: any[];
   title: string;
+
+  sjekklister: any[] = [
+    {title: "Før pasienten kommer hjem",      component: "Sjekkliste1Page"},
+    {title: "Når pasienten er kommet hjem",   component: "Sjekkliste2Page"},
+    {title: "Når pasienten er død",           component: "Sjekkliste3Page"},
+  ]
   symptomer: any[] = [
     {title: "Smerte",     component: "Symptomer1Page"},
     {title: "Kvalme",     component: "Symptomer2Page"},
@@ -37,9 +43,13 @@ export class ListPage {
       this.pages = this.symptomer
       this.title = "Symptomer"
     }
-    else if ( pagesInput = "denSisteTiden" ){
+    else if ( pagesInput == "denSisteTiden" ) {
       this.pages = this.denSisteTiden
       this.title = "Den siste tiden"
+    }
+    else {
+      this.pages = this.sjekklister
+      this.title = "Sjekklister"
     }
   }
 

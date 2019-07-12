@@ -1,4 +1,8 @@
 
+) !! Fikse skriftstørrelse på noen header-tittler, da noen wrapper enkeltbokstaver
+
+) !! legge til local-storage? for sjekkliste
+
 ) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? 
 
 ) husk å fjerne service-worker osv når appen bygges til produksjon
