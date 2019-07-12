@@ -15,7 +15,7 @@ export class HomePage {
   menuButtonClicked(button){
     let page;
     switch(button){
-      case 1: page = "Innhold_bakgrunnPage"
+      case 1: page = "SjekklistePage"
         break;
       case 2: this.navCtrl.push("ListPage", { pages: "symptomer" });
         break;

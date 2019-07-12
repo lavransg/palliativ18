@@ -4,12 +4,12 @@ import { NavController, NavParams, IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-innhold_bakgrunn',
-  templateUrl: 'innhold_bakgrunn.html'
+  selector: 'page-sjekkliste',
+  templateUrl: 'sjekkliste.html'
 })
-export class Innhold_bakgrunnPage {
+export class SjekklistePage {
 
-  title: string = "Innhold / bakgrunn"
+  title: string = "Sjekkliste"
 
   public checklist = [
     { val: 'Sed ei autem aperiam probatus. An ridens suscipit theophrastus nam.', isChecked: false },
