@@ -12,7 +12,9 @@ page-list {
         top: 50%;
         transform: translateY(-50%);
     }
-
+    ion-item:last-child {
+        border-bottom: 0 !important;
+    }
 
     @media screen and (min-height : 640px) {
     
