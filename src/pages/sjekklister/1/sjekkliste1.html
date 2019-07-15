@@ -8,7 +8,7 @@
 
     <ion-list>
       <ion-item text-wrap no-lines *ngFor="let item of checklist">
-        <ion-label>{{item.val}}</ion-label>
+        <ion-label [ngClass]="{'grayed': item.isChecked}">{{item.val}}</ion-label>
         <ion-checkbox color="dark" [(ngModel)]="item.isChecked"></ion-checkbox>
       </ion-item> 
     </ion-list>

@@ -12,23 +12,19 @@ export class Sjekkliste2Page {
   title: string = "Når pasienten er kommet hjem"
 
   public checklist = [
-    { val: 'Sed ei autem aperiam probatus. An ridens suscipit theophrastus nam.', isChecked: false },
-    { val: 'Nec no tale comprehensam.', isChecked: false },
-    { val: 'Putent feugait prodesset ad est, no qui ullum elaboraret id.', isChecked: false },
-    { val: 'Ut latine detracto mei erant.', isChecked: false },
-    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
-    { val: 'Vim ullum explicari laboramus et.', isChecked: false },
-    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
-    { val: 'Sed te erat verear lobortis. Pro id quaeque adolescens voluptaria.', isChecked: false },
-    { val: 'Ut latine detracto mei erant.', isChecked: false },
-    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
-    { val: 'Nec no tale comprehensam.', isChecked: false },
-    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
-    { val: 'Sed te erat verear lobortis. Pro id quaeque adolescens voluptaria.', isChecked: false },
-    { val: 'Vim ullum explicari laboramus et.', isChecked: false },
-    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
-    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
-    { val: 'Ut latine detracto mei erant.', isChecked: false },
+    { val: 'Kontinuerlig oppfølging av aktuelle oppgaver fra før pasienten kommer hjem. Informer pårørende om rett til pleiepenger!', isChecked: false },
+    { val: 'Pasienten og pårørende får hilse på sin primærkontakt', isChecked: false },
+    { val: 'Ansvarlige sykepleiere på kveld / helg / hellidag gjør seg kjent hjemme hos pasienten', isChecked: false },
+    { val: 'Sikre oversikt over medisiner, resepter, og utstyr. Bestill nye dersom behov', isChecked: false },
+    { val: 'Dokumentere i elektronisk pasientjournal (EPJ)', isChecked: false }  
+  ];
+
+  public checklist2 = [
+    { val: 'Kontakt fastlegen for avtale om mulig hjemmebesøk', isChecked: false },
+    { val: 'Oppdater pasientens medisinoversikt ved behov', isChecked: false },
+    { val: 'Følg opp pårørende. Vurder behov for avlasting / "time-out"?', isChecked: false },
+    { val: 'Vurder avlasting for pårørende på natt', isChecked: false },
+    { val: 'Hyppig kontakt med fastlege - avklare rolle ved dødsfall', isChecked: false }
   ];
 
   constructor(public navCtrl: NavController,public navParams: NavParams) {}
@@ -45,6 +41,9 @@ export class Sjekkliste2Page {
   clearCheckboxes(){
     for (let item in this.checklist) {
       this.checklist[item].isChecked = false;
+    }
+    for (let item in this.checklist2) {
+      this.checklist2[item].isChecked = false;
     }
   }
 

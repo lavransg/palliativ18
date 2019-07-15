@@ -12,23 +12,9 @@ export class Sjekkliste3Page {
   title: string = "Når pasienten er død"
 
   public checklist = [
-    { val: 'Sed ei autem aperiam probatus. An ridens suscipit theophrastus nam.', isChecked: false },
-    { val: 'Nec no tale comprehensam.', isChecked: false },
-    { val: 'Putent feugait prodesset ad est, no qui ullum elaboraret id.', isChecked: false },
-    { val: 'Ut latine detracto mei erant.', isChecked: false },
-    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
-    { val: 'Vim ullum explicari laboramus et.', isChecked: false },
-    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
-    { val: 'Sed te erat verear lobortis. Pro id quaeque adolescens voluptaria.', isChecked: false },
-    { val: 'Ut latine detracto mei erant.', isChecked: false },
-    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
-    { val: 'Nec no tale comprehensam.', isChecked: false },
-    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
-    { val: 'Sed te erat verear lobortis. Pro id quaeque adolescens voluptaria.', isChecked: false },
-    { val: 'Vim ullum explicari laboramus et.', isChecked: false },
-    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
-    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
-    { val: 'Ut latine detracto mei erant.', isChecked: false },
+    { val: 'Fastlege skriver dødsattest - i hjemmet', isChecked: false },
+    { val: 'Brosjyre: "Til deg som har mistet en av dine nærmeste" (KLB), "Når en av dine nærmeste dør" (H.Dir)', isChecked: false },
+    { val: 'Personalets refleksjon og evaluering av prosessen', isChecked: false }
   ];
 
   constructor(public navCtrl: NavController,public navParams: NavParams) {}

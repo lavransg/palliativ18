@@ -12,23 +12,15 @@ export class Sjekkliste1Page {
   title: string = "Før pasienten kommer hjem"
 
   public checklist = [
-    { val: 'Sed ei autem aperiam probatus. An ridens suscipit theophrastus nam.', isChecked: false },
-    { val: 'Nec no tale comprehensam.', isChecked: false },
-    { val: 'Putent feugait prodesset ad est, no qui ullum elaboraret id.', isChecked: false },
-    { val: 'Ut latine detracto mei erant.', isChecked: false },
-    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
-    { val: 'Vim ullum explicari laboramus et.', isChecked: false },
-    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
-    { val: 'Sed te erat verear lobortis. Pro id quaeque adolescens voluptaria.', isChecked: false },
-    { val: 'Ut latine detracto mei erant.', isChecked: false },
-    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
-    { val: 'Nec no tale comprehensam.', isChecked: false },
-    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
-    { val: 'Sed te erat verear lobortis. Pro id quaeque adolescens voluptaria.', isChecked: false },
-    { val: 'Vim ullum explicari laboramus et.', isChecked: false },
-    { val: 'Ex vel natum suscipit. Usu vero mucius in, persecuti deseruisse in qui. Sed justo.', isChecked: false },
-    { val: 'Te per omnium disputationi, sed an quodsi admodum deterruisset vel.', isChecked: false },
-    { val: 'Ut latine detracto mei erant.', isChecked: false },
+    { val: 'Samarbeidsmøte på sykehuset med pasient / pårørende, fastlege og sykehusavdeling', isChecked: false },
+    { val: 'Avklare: diagnose, hjelpebehov, pleiepenger, hjelpemidler - OBS: fysioterapi, forventninger, tidspunkt for hjemreise, åpen retur? kontakt med spesialisthelsetjenesten', isChecked: false },
+    { val: 'Sikre at fastlegen informeres - er informert om hjemreise', isChecked: false },
+    { val: 'Avklare tilgjengelighet utenom kontortid med fastlege', isChecked: false },
+    { val: 'Vurdere / utarbeide "individuell plan til bruk i palliasjon"', isChecked: false },
+    { val: 'Nødvendige medisiner for de første døgnene sendes med pasienten', isChecked: false },
+    { val: 'E-resepter sendes fra sykehus og/eller fastlege', isChecked: false },
+    { val: 'Sjekke at nødvendige medisiner er tilgjengelig på apotek, evt. bestille disse', isChecked: false },
+    { val: 'Dokumentere i elektronisk pasientjournal', isChecked: false }
   ];
 
   constructor(public navCtrl: NavController,public navParams: NavParams) {}
