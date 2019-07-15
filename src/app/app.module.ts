@@ -9,6 +9,7 @@ import { InformationPage } from '../pages/information/information';
 import { HeaderBarModule } from '../pages/header.module';
 import { SearchPage } from '../pages/search/search';
 import { SearchData } from '../providers/searchData';
+import { Checklists } from '../providers/checklists';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { SearchData } from '../providers/searchData';
     StatusBar,
     SplashScreen,
     SearchData,
+    Checklists,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

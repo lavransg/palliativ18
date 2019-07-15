@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Content } from 'ionic-angular';
 import { NavController, NavParams, IonicPage } from 'ionic-angular';
+import { Checklists } from '../../../providers/checklists';
 
 @IonicPage()
 @Component({
@@ -11,19 +12,7 @@ export class Sjekkliste1Page {
 
   title: string = "Før pasienten kommer hjem"
 
-  public checklist = [
-    { val: 'Samarbeidsmøte på sykehuset med pasient / pårørende, fastlege og sykehusavdeling', isChecked: false },
-    { val: 'Avklare: diagnose, hjelpebehov, pleiepenger, hjelpemidler - OBS: fysioterapi, forventninger, tidspunkt for hjemreise, åpen retur? kontakt med spesialisthelsetjenesten', isChecked: false },
-    { val: 'Sikre at fastlegen informeres - er informert om hjemreise', isChecked: false },
-    { val: 'Avklare tilgjengelighet utenom kontortid med fastlege', isChecked: false },
-    { val: 'Vurdere / utarbeide "individuell plan til bruk i palliasjon"', isChecked: false },
-    { val: 'Nødvendige medisiner for de første døgnene sendes med pasienten', isChecked: false },
-    { val: 'E-resepter sendes fra sykehus og/eller fastlege', isChecked: false },
-    { val: 'Sjekke at nødvendige medisiner er tilgjengelig på apotek, evt. bestille disse', isChecked: false },
-    { val: 'Dokumentere i elektronisk pasientjournal', isChecked: false }
-  ];
-
-  constructor(public navCtrl: NavController,public navParams: NavParams) {}
+  constructor(public navCtrl: NavController,public navParams: NavParams, public checklists: Checklists) {}
   
   @ViewChild(Content) content: Content;
 
@@ -35,8 +24,8 @@ export class Sjekkliste1Page {
   }
 
   clearCheckboxes(){
-    for (let item in this.checklist) {
-      this.checklist[item].isChecked = false;
+    for (let item in this.checklists.checklist1) {
+      this.checklists.checklist1[item].isChecked = false;
     }
   }
 

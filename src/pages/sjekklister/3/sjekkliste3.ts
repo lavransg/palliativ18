@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Content } from 'ionic-angular';
 import { NavController, NavParams, IonicPage } from 'ionic-angular';
+import { Checklists } from '../../../providers/checklists';
 
 @IonicPage()
 @Component({
@@ -11,13 +12,7 @@ export class Sjekkliste3Page {
 
   title: string = "Når pasienten er død"
 
-  public checklist = [
-    { val: 'Fastlege skriver dødsattest - i hjemmet', isChecked: false },
-    { val: 'Brosjyre: "Til deg som har mistet en av dine nærmeste" (KLB), "Når en av dine nærmeste dør" (H.Dir)', isChecked: false },
-    { val: 'Personalets refleksjon og evaluering av prosessen', isChecked: false }
-  ];
-
-  constructor(public navCtrl: NavController,public navParams: NavParams) {}
+  constructor(public navCtrl: NavController,public navParams: NavParams, public checklists: Checklists) {}
   
   @ViewChild(Content) content: Content;
 
@@ -29,8 +24,8 @@ export class Sjekkliste3Page {
   }
 
   clearCheckboxes(){
-    for (let item in this.checklist) {
-      this.checklist[item].isChecked = false;
+    for (let item in this.checklists.checklist4) {
+      this.checklists.checklist4[item].isChecked = false;
     }
   }
 

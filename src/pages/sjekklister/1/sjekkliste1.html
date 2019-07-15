@@ -7,7 +7,7 @@
   <div class="checklist-container">
 
     <ion-list>
-      <ion-item text-wrap no-lines *ngFor="let item of checklist">
+      <ion-item text-wrap no-lines *ngFor="let item of checklists.checklist1">
         <ion-label [ngClass]="{'grayed': item.isChecked}">{{item.val}}</ion-label>
         <ion-checkbox color="dark" [(ngModel)]="item.isChecked"></ion-checkbox>
       </ion-item> 

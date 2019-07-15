@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Content } from 'ionic-angular';
 import { NavController, NavParams, IonicPage } from 'ionic-angular';
+import { Checklists } from '../../../providers/checklists';
 
 @IonicPage()
 @Component({
@@ -11,23 +12,7 @@ export class Sjekkliste2Page {
 
   title: string = "Når pasienten er kommet hjem"
 
-  public checklist = [
-    { val: 'Kontinuerlig oppfølging av aktuelle oppgaver fra før pasienten kommer hjem. Informer pårørende om rett til pleiepenger!', isChecked: false },
-    { val: 'Pasienten og pårørende får hilse på sin primærkontakt', isChecked: false },
-    { val: 'Ansvarlige sykepleiere på kveld / helg / hellidag gjør seg kjent hjemme hos pasienten', isChecked: false },
-    { val: 'Sikre oversikt over medisiner, resepter, og utstyr. Bestill nye dersom behov', isChecked: false },
-    { val: 'Dokumentere i elektronisk pasientjournal (EPJ)', isChecked: false }  
-  ];
-
-  public checklist2 = [
-    { val: 'Kontakt fastlegen for avtale om mulig hjemmebesøk', isChecked: false },
-    { val: 'Oppdater pasientens medisinoversikt ved behov', isChecked: false },
-    { val: 'Følg opp pårørende. Vurder behov for avlasting / "time-out"?', isChecked: false },
-    { val: 'Vurder avlasting for pårørende på natt', isChecked: false },
-    { val: 'Hyppig kontakt med fastlege - avklare rolle ved dødsfall', isChecked: false }
-  ];
-
-  constructor(public navCtrl: NavController,public navParams: NavParams) {}
+  constructor(public navCtrl: NavController,public navParams: NavParams, public checklists: Checklists) {}
   
   @ViewChild(Content) content: Content;
 
@@ -39,11 +24,11 @@ export class Sjekkliste2Page {
   }
 
   clearCheckboxes(){
-    for (let item in this.checklist) {
-      this.checklist[item].isChecked = false;
+    for (let item in this.checklists.checklist2) {
+      this.checklists.checklist2[item].isChecked = false;
     }
-    for (let item in this.checklist2) {
-      this.checklist2[item].isChecked = false;
+    for (let item in this.checklists.checklist3) {
+      this.checklists.checklist3[item].isChecked = false;
     }
   }
 
