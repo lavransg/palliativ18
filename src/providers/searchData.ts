@@ -20,7 +20,7 @@ Synkope (kortvarig bevissthetstap med fullstendig oppvåkning);Hjertearytmier;Ve
 Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;Blødninger;Tumorlysesyndrom;Hyperkalsemi;Delirium;", 
                 component: "Akutte_tilstanderPage"
             },
-            {title: 'Innhold / bakgrunn',searchTitle: ";Innhold / bakgrunn;Bakgrunn|2;Innledning|1;",component: "Innhold_bakgrunnPage"},
+            /* {title: 'Innhold / bakgrunn',searchTitle: ";Innhold / bakgrunn;Bakgrunn|2;Innledning|1;",component: "Innhold_bakgrunnPage"}, */
             /* {title: 'Kartlegging',       searchTitle: ";Kartlegging;",       component: "KartleggingPage"}, */
             {title: 'Kommunikasjon',     searchTitle: ";Kommunikasjon;Forberedende samtale om livets sluttfase|1;Samtale med pårørende|2;Når barn og unge er pårørende|3;",     component: "KommunikasjonPage"},
             /* {title: 'Prosedyrer',        searchTitle: ";Prosedyrer;Subcutan kanyle|1;Ileus/Subileus|3;",        component: "ProsedyrerPage"}, */
