@@ -20,7 +20,7 @@ import { Checklists } from '../providers/checklists';
   imports: [
     BrowserModule,
     HeaderBarModule,
-    IonicModule.forRoot(MyApp, {pageTransition: "md-transition"})
+    IonicModule.forRoot(MyApp, {pageTransition: "md-transition", preloadModules: true})
   ],
   bootstrap: [IonicApp],
   entryComponents: [
