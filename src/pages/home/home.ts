@@ -26,16 +26,11 @@ export class HomePage {
       this.showBtn = true;
     });
      
-    //button click event to show the promt
-             
+    //button click event to show the promt   
     window.addEventListener('appinstalled', (event) => {
      alert('installed');
     });
-     
-     
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-      alert('display-mode is standalone');
-    }
+
   }
 
   menuButtonClicked(button){

@@ -36,23 +36,11 @@
         <br>Den siste tiden
       </div>
     </ion-row>
-
-    <!--<ion-row>
-      <div class="button-container" (click)="menuButtonClicked(7)">
-        <img class="button-image" src="assets/imgs/prosedyrer.png" alt="image missing" >
-        <br>Prosedyrer
-      </div>
-      <div class="button-container" (click)="menuButtonClicked(8)">
-        <img class="button-image" src="assets/imgs/kartlegging.png" alt="image missing" >
-        <br>Kartlegging
-      </div>
-    </ion-row>-->
-    
     
   </ion-grid>
   <div class="install-prompt" *ngIf="showBtn">
-      <button class="btn" ion-button full (click)="add_to_home(event)">Installer</button>
-      <button class="btn" ion-button full  (click)="this.showBtn=false" >Lukk</button>
+      <button class="btn" color="dark" ion-button full round (click)="add_to_home(event)">Legg til på hjem-skjerm</button>
+      <button class="btn" color="medium" ion-button full round  (click)="this.showBtn=false" >Lukk</button>
   </div>
   
 </ion-content>
