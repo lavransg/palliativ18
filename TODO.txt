@@ -3,6 +3,8 @@
 
 ) !! legge til local-storage? for sjekkliste
 
+) fiks ikoner osv for PWA
+
 ) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? 
 
 ) husk å fjerne service-worker osv når appen bygges til produksjon

@@ -4,8 +4,23 @@
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
-    "src": "assets/imgs/icon.png",
+    "src": "assets/imgs/icon2.png",
     "sizes": "512x512",
+    "type": "image/png"
+  },
+  {
+    "src": "assets/imgs/icon3.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+    "src": "assets/icon/favicon-32x32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  },
+  {
+    "src": "assets/imgs/apple-touch-icon.png",
+    "sizes": "180x180",
     "type": "image/png"
   }],
   "background_color": "#4e8ef7",
