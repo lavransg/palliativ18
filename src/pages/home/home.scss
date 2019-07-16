@@ -43,6 +43,13 @@ page-home {
         margin-bottom: 8px;
     }
 
+    .install-prompt{
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        z-index: 100;
+    }
+
     @media screen and (max-height : 640px) {
         .button-container{
             padding-left: 0px;

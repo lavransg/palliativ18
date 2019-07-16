@@ -64,7 +64,6 @@ export class HomePage {
   }
 
   add_to_home(e){
-    debugger
     // hide our user interface that shows our button
     // Show the prompt
     this.deferredPrompt.prompt();
