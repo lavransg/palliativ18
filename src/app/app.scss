@@ -46,10 +46,7 @@ $searchbar-md-background-color: transparent;
     padding-top: calc(30px + env(safe-area-inset-top));
     padding-top: calc(30px + constant(safe-area-inset-top)) ;
     font-family: 'Varela Round', sans-serif;
-}
-
-.header{
-    //max-height: 85px !important;
+    overflow-y: scroll !important;
 }
 
 .menu-header{
@@ -128,6 +125,12 @@ ul{
     padding-left: 10px;
 }
 
+.overflow-scroll {
+    overflow: scroll !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+}
+
 @media screen and (max-height : 350px) {
     .header-fixed{
         font-size: 2rem;
@@ -143,5 +146,6 @@ ul{
     .scroll-content{
         padding-top: 30px;
         margin-top: 70px;
+        overflow-y: scroll !important
     }
 }
