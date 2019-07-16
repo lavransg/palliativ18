@@ -1,0 +1,24 @@
+<ion-row class="menu-header">
+<ion-col col-2></ion-col>
+<ion-col col-8 class="title"><b>{{title}}</b></ion-col>
+<ion-col col-2></ion-col>
+</ion-row>
+
+<div class="header-fixed">
+<ion-row class="header-shadow">
+    <ion-col col-2>
+        <div style="width:100%" *ngIf="!frontpage" (click)="backButtonClicked()">
+            <ion-icon name="arrow-back" ></ion-icon>
+        </div>
+        <div style="width:100%" *ngIf="frontpage" (click)="infoButtonClicked()">
+            <ion-icon name="ios-information-circle-outline" ></ion-icon>
+        </div>
+    </ion-col>
+    <ion-col col-8><b>{{title}}</b></ion-col>
+    <ion-col col-2>
+        <div style="width:100%" (click)=searchButtonClicked()>
+            <ion-icon name="search" ></ion-icon>
+        </div>
+    </ion-col>
+</ion-row>
+</div>
