@@ -17,7 +17,7 @@ export class SearchPage {
   constructor(public navCtrl: NavController, public searchData: SearchData) {}
 
   ionViewDidLoad() {
-    this.input.setFocus();
+    //this.input.setFocus();
     setTimeout(() => {
       //Keyboard.show() // for android
       this.input.setFocus();
