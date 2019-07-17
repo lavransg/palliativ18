@@ -1,14 +1,14 @@
 <ion-header><header-bar [title]="title"></header-bar></ion-header>
 <ion-content>
   
-  <div class="clear-button-container">
-    <button small round ion-button color="dark" outline (click)="this.clearCheckboxes()">Nullstill</button>
-  </div>
-  <div class="checklist-container">
 
+  <div class="checklist-container">
+    <div class="clear-button-container">
+      <button small round ion-button color="dark" outline (click)="this.clearCheckboxes()">Nullstill</button>
+    </div>
     <ion-list>
-      <ion-item text-wrap no-lines *ngFor="let item of checklist">
-        <ion-label [ngClass]="{'grayed': item.isChecked}">{{item.val}}</ion-label>
+      <ion-item text-wrap no-lines *ngFor="let item of checklists.checklist4">
+        <ion-label style="white-space: pre-line" [ngClass]="{'grayed': item.isChecked}">{{item.val}}</ion-label>
         <ion-checkbox color="dark" [(ngModel)]="item.isChecked"></ion-checkbox>
       </ion-item> 
     </ion-list>

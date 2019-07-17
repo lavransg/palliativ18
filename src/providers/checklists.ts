@@ -33,7 +33,7 @@ export class Checklists {
 
       public checklist4 = [
         { val: 'Fastlege skriver dødsattest - i hjemmet', isChecked: false },
-        { val: 'Brosjyre: "Til deg som har mistet en av dine nærmeste" (KLB), "Når en av dine nærmeste dør" (H.Dir)', isChecked: false },
+        { val: 'Brosjyre:\n"Til deg som har mistet en av dine nærmeste" (KLB), "Når en av dine nærmeste dør" (H.Dir)', isChecked: false },
         { val: 'Personalets refleksjon og evaluering av prosessen', isChecked: false }
       ];
  

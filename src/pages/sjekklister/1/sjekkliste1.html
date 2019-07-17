@@ -1,10 +1,12 @@
 <ion-header><header-bar [title]="title"></header-bar></ion-header>
 <ion-content>
   
-  <div class="clear-button-container">
-    <button small round ion-button color="dark" outline (click)="this.clearCheckboxes()">Nullstill</button>
-  </div>
+  
   <div class="checklist-container">
+
+    <div class="clear-button-container">
+      <button small round ion-button color="dark" outline (click)="this.clearCheckboxes()">Nullstill</button>
+    </div>
 
     <ion-list>
       <ion-item text-wrap no-lines *ngFor="let item of checklists.checklist1">
