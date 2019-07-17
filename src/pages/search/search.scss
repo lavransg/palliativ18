@@ -46,7 +46,9 @@ page-search{
         top: 50%;
         transform: translateY(-50%);
     }
-
+    ion-item:last-child {
+        border-bottom: 0 !important;
+    }
     
 
     @media screen and (max-height : 640px) {
