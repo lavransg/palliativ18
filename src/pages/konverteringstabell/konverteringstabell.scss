@@ -6,17 +6,17 @@ page-konverteringstabell{
 	
     }
     .header-fixed{
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
     
     #tabell-header{
-        font-size: 2.2rem !important;
+        font-size: 2.1rem !important;
     }
     #konverteringstabell{
         //transform: rotate(90deg);
         
         max-width: none;
-        height: calc(100vh - 95px);
+        height: calc(100vh - 105px);
         //width: auto;
         z-index: 200;
         margin-top: 5px;
@@ -45,7 +45,7 @@ page-konverteringstabell{
             margin: 0;
         }
         #konverteringstabell{
-            height: calc(100vh - 100px);
+            height: calc(100vh - 105px);
         }
         .header{
             height: 90px;

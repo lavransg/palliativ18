@@ -3,6 +3,7 @@
   "short_name": "Palliasjon",
   "start_url": "index.html",
   "display": "standalone",
+  "orientation": "portrait",
   "icons": [{
     "src": "assets/imgs/icon2.png",
     "sizes": "512x512",
@@ -23,7 +24,6 @@
     "sizes": "180x180",
     "type": "image/png"
   }],
-  "orientation": "portrait",
   "background_color": "#4e8ef7",
   "theme_color": "#4e8ef7"
 }
