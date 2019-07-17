@@ -39,8 +39,8 @@
     
   </ion-grid>
   <div class="install-prompt" *ngIf="showBtn">
-      <button class="btn" color="dark" ion-button full round (click)="add_to_home(event)">Legg til på hjem-skjerm</button>
-      <button class="btn" color="medium" ion-button full round  (click)="this.showBtn=false" >Lukk</button>
+      <button ion-button class="prompt-button" color="dark" round outline (click)="add_to_home(event)">Legg til på hjem-skjerm</button>
+      <button ion-button class="prompt-button" color="dark" round outline (click)="this.showBtn=false" >Lukk</button>
   </div>
   
 </ion-content>
