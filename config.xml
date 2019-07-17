@@ -2,7 +2,7 @@
 <widget id="palliasjon.helseinnovasjonssenteret" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Palliasjon</name>
     <description>Håndbok for palliativ pleie</description>
-    <author email="lavransgronseth@gmail.com" href="http://ionicframework.com/">Lavrans Grønseth</author>
+    <author email="lavransgronseth@gmail.com" href="https://www.helseinnovasjonssenteret.no/">Lavrans Grønseth</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

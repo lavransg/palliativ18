@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, Renderer, ElementRef } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { SearchData } from '../../providers/searchData';
@@ -14,13 +14,16 @@ export class SearchPage {
   results: any[];
   showEmptyResults: boolean = false;
 
-  constructor(public navCtrl: NavController, public searchData: SearchData) {}
+  constructor(private renderer:Renderer, private elementRef:ElementRef, public navCtrl: NavController, public searchData: SearchData) {}
 
   ionViewDidLoad() {
     //this.input.setFocus();
+    const element = this.elementRef.nativeElement.querySelector('input');
     setTimeout(() => {
       //Keyboard.show() // for android
-      this.input.setFocus();
+      //this.input.setFocus();
+      this.renderer.invokeElementMethod(element, 'focus', []);
+      //Keyboard.show();
     },400);
 
  }
