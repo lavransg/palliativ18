@@ -23,6 +23,7 @@
     "sizes": "180x180",
     "type": "image/png"
   }],
+  "orientation": "portrait",
   "background_color": "#4e8ef7",
   "theme_color": "#4e8ef7"
 }

@@ -3,7 +3,11 @@
 
 ) !! legge til local-storage? for sjekkliste
 
-) fiks ikoner osv for PWA
+x) fiks ikoner osv for PWA
+
+) fjern header på søkesiden for å gi mer plass til søkeresultatene
+
+? ) tillat at appen kan brukes i landskap-modus?
 
 ) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? 
 
