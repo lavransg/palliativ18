@@ -1,21 +1,21 @@
 
-) !! Fikse skriftstørrelse på noen header-tittler, da noen wrapper enkeltbokstaver
+x) !! Fikse skriftstørrelse på noen header-tittler, da noen wrapper enkeltbokstaver
 
-) !! legge til local-storage? for sjekkliste
+?) !! legge til local-storage? for sjekkliste
 
-) legg til konverteringstabell i søkefunskjon 
+x) legg til konverteringstabell i søkefunskjon 
 
 x) fiks ikoner osv for PWA
 
-) fjern header på søkesiden for å gi mer plass til søkeresultatene
+x) fjern header på søkesiden for å gi mer plass til søkeresultatene
 
 ? ) tillat at appen kan brukes i landskap-modus?
 
-) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? 
+x) finpusse innhold, lenker der det trengs, redusere hoved-overskrifter? 
 
 ) husk å fjerne service-worker osv når appen bygges til produksjon
 
-) sett fokus på input-feltet på søkesiden
+?) sett fokus på input-feltet på søkesiden
 
 ? ) være konsekvent ved bruk av <br> eller class="content-paragraph"
 
@@ -23,9 +23,9 @@ x) fiks ikoner osv for PWA
 
 ? ) logo på framsiden
 
-? ) pwa popup
+x ) pwa popup
 
-? ) fikse frysing ved scrolling på bunnen av sider for pwa
+? ) fikse frysing ved scrolling på bunnen og toppen av sider for pwa
 
 ? ) button-press feedback
 
@@ -71,11 +71,11 @@ x- link i denSisteTiden2
 
 x- link i denSisteTiden3
 
-- tabell osv. i denSisteTiden5
+x- tabell osv. i denSisteTiden5
 
 x- link i densistetiden6(når døden intreffer) +  etterspør eventuellt barn og unge (det er ikke etterlattesamtale i kommunikasjon) 
 
 x- link i prosedyrer
 
-- KARTLEGGING
+x- KARTLEGGING
 
