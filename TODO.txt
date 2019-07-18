@@ -3,6 +3,8 @@
 
 ) !! legge til local-storage? for sjekkliste
 
+) legg til konverteringstabell i søkefunskjon 
+
 x) fiks ikoner osv for PWA
 
 ) fjern header på søkesiden for å gi mer plass til søkeresultatene

@@ -22,9 +22,10 @@ Vena cava superior syndrom;Tromboemboli;Sepsis (f.eks. nøytropen feber);Feber;B
             },
             /* {title: 'Innhold / bakgrunn',searchTitle: ";Innhold / bakgrunn;Bakgrunn|2;Innledning|1;",component: "Innhold_bakgrunnPage"}, */
             /* {title: 'Kartlegging',       searchTitle: ";Kartlegging;",       component: "KartleggingPage"}, */
-            {title: 'Kommunikasjon',     searchTitle: ";Kommunikasjon;Forberedende samtale om livets sluttfase|1;Samtale med pårørende|2;Når barn og unge er pårørende|3;",     component: "KommunikasjonPage"},
+            {title: 'Kommunikasjon',        searchTitle: ";Kommunikasjon;Forberedende samtale om livets sluttfase|1;Samtale med pårørende|2;Når barn og unge er pårørende|3;",     component: "KommunikasjonPage"},
             /* {title: 'Prosedyrer',        searchTitle: ";Prosedyrer;Subcutan kanyle|1;Ileus/Subileus|3;",        component: "ProsedyrerPage"}, */
-            {title: 'Åndelig omsorg',    searchTitle: ";Åndelig omsorg;Tiltak|2;",    component: "Aandelig_omsorgPage"},
+            {title: 'Åndelig omsorg',       searchTitle: ";Åndelig omsorg;Tiltak|2;",    component: "Aandelig_omsorgPage"},
+            {title: 'Konverteringstabell',  searchTitle: ";Konverteringstabell;",        component: "KonverteringstabellPage"},
 
             //Symptomer
             {
