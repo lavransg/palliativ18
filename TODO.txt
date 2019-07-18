@@ -3,6 +3,8 @@ x) !! Fikse skriftstørrelse på noen header-tittler, da noen wrapper enkeltboks
 
 ?) !! legge til local-storage? for sjekkliste
 
+x) plasser pil korrekt i listesiden
+
 x) legg til konverteringstabell i søkefunskjon 
 
 x) fiks ikoner osv for PWA
