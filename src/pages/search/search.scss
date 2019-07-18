@@ -60,7 +60,8 @@ page-search{
         .search-header{
             font-size: 2.5rem !important; 
             box-shadow: 0 3px 35px 35px white;
-	        height: 70px
+            padding-top: calc(10px + env(safe-area-inset-top));
+	        height: 60px
         }
 	    .scroll-content{
             margin-top: 0px !important;
