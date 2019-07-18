@@ -2,22 +2,26 @@
   
   <ion-row>
       <ion-col col-2>
-      <ion-icon name="arrow-back" (click)="exitButtonClicked()"></ion-icon>
+        <div style="width:100%;">
+            <ion-icon name="arrow-back" (click)="exitButtonClicked()"></ion-icon>
+        </div>
       </ion-col>
-      <ion-col col-8><b>Søk</b></ion-col>
-      <ion-col col-2></ion-col>
+      <ion-col col-10 style="padding-top: 0px;">
+        <ion-searchbar
+          placeholder="Søketekst"
+          [(ngModel)]="searchbarInput"
+          [showCancelButton]="shouldShowCancel"
+          (ionInput)="onInput($event)"
+          (ionCancel)="onCancel($event)">
+      </ion-searchbar>
+    </ion-col>
+      
   </ion-row>
 
-  <ion-searchbar
-    placeholder="søketekst"
-    [(ngModel)]="searchbarInput"
-    [showCancelButton]="shouldShowCancel"
-    (ionInput)="onInput($event)"
-    (ionCancel)="onCancel($event)">
-  </ion-searchbar>
+  
 </div>
 
-<div class="header-spacer"></div>
+<!-- <div class="header-spacer"></div> -->
 
 <ion-content>
 

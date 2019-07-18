@@ -5,7 +5,7 @@ page-search{
     }
     
     .list{
-        margin-top: 100px;
+        margin-top: 70px;
     }
 
     .search-header{
@@ -14,21 +14,26 @@ page-search{
         z-index: 10;
         background-clip: content-box;
         position: fixed;
+        font-size:  2.4rem;
         top: 0px;
         left: 0px;
-        height: 130px;
+        /* height: 70px; */
         width: 100%;
-        font-size: 3rem;
         text-align: center;
         font-family: 'Varela Round', sans-serif;
         background: white;
         box-shadow: 0 3px 35px 35px white;
 
     }
+    ion-searchbar{
+        padding-top: 0px !important;
+        padding-right: 10px;
+        min-height: 38px;  
+    }
 
     .header-spacer{
         width: 100%;
-        height: 100px;
+        height: 70px;
     }
 
     .empty-search{
@@ -55,23 +60,11 @@ page-search{
         .search-header{
             font-size: 2.5rem !important; 
             box-shadow: 0 3px 35px 35px white;
-	        height: 100px
+	        height: 70px
         }
 	    .scroll-content{
             margin-top: 0px !important;
         }
-    }
-    
-    @media screen and (min-width : 360px) {
-        
-        .label{
-            font-size: 2rem !important;
-        }
-
-        .list{
-            margin-top: 140px;
-        }
-
     }
 
 }
